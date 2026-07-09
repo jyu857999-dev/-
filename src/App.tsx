@@ -58,6 +58,10 @@ function GuideLibrary() {
   const buildTags = Array.from(
     new Set(gameGuides.flatMap((guide) => guide.buildTags ?? [])),
   ).sort((a, b) => a.localeCompare(b, 'zh-Hans-CN'))
+  const categoryStats = game.supportedCategories.map((category) => ({
+    category,
+    count: gameGuides.filter((guide) => guide.category === category).length,
+  }))
   const results = filterGuides(gameGuides, game.id, query, filters).filter(
     (guide) =>
       (equipmentType === 'all' || guide.equipmentType === equipmentType) &&
@@ -81,6 +85,17 @@ function GuideLibrary() {
           <SourceNotice />
         </div>
       </section>
+
+      <CategoryDashboard
+        stats={categoryStats}
+        activeCategory={filters.category}
+        onSelect={(category) =>
+          setFilters({
+            ...filters,
+            category,
+          })
+        }
+      />
 
       <section className="library-layout" aria-label="攻略列表">
         <aside className="filter-panel">
@@ -202,6 +217,41 @@ function GuideLibrary() {
         </div>
       </section>
     </main>
+  )
+}
+
+function CategoryDashboard({
+  stats,
+  activeCategory,
+  onSelect,
+}: {
+  stats: { category: GuideEntry['category']; count: number }[]
+  activeCategory: GuideFilters['category']
+  onSelect: (category: GuideFilters['category']) => void
+}) {
+  const total = stats.reduce((sum, item) => sum + item.count, 0)
+  return (
+    <section className="category-dashboard" aria-label="分类总览">
+      <button
+        type="button"
+        className={activeCategory === 'all' ? 'active' : ''}
+        onClick={() => onSelect('all')}
+      >
+        <span>全部</span>
+        <strong>{total}</strong>
+      </button>
+      {stats.map(({ category, count }) => (
+        <button
+          key={category}
+          type="button"
+          className={activeCategory === category ? 'active' : ''}
+          onClick={() => onSelect(category)}
+        >
+          <span>{categoryLabels[category]}</span>
+          <strong>{count}</strong>
+        </button>
+      ))}
+    </section>
   )
 }
 
