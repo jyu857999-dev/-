@@ -80,6 +80,23 @@ a:focus-visible {
   font-size: 14px;
 }
 
+.feature-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin: 0 0 24px;
+  padding: 18px;
+  border: 1px solid #ead08f;
+  border-radius: 8px;
+  background: #fff8e6;
+}
+
+.feature-strip h2,
+.feature-strip p {
+  margin-bottom: 0;
+}
+
 .game-hero img {
   width: 100%;
   aspect-ratio: 16 / 7;
@@ -400,6 +417,17 @@ dd {
   text-decoration: none;
 }
 
+.primary-link.solid {
+  align-items: center;
+  min-height: 42px;
+  margin: 0;
+  padding: 0 16px;
+  border-radius: 8px;
+  background: #101828;
+  color: #fff;
+  white-space: nowrap;
+}
+
 .guide-detail {
   display: grid;
   gap: 24px;
@@ -512,6 +540,282 @@ dd {
   text-align: center;
 }
 
+.weapon-shell {
+  width: min(1280px, calc(100% - 32px));
+}
+
+.weapon-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 24px;
+  align-items: end;
+  margin-bottom: 18px;
+  padding: 28px;
+  border: 1px solid #2b2f38;
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgb(16 24 40 / 94%), rgb(10 13 20 / 98%)),
+    #101828;
+  color: #fff;
+}
+
+.weapon-hero h1,
+.weapon-hero h2,
+.weapon-hero h3 {
+  color: #fff;
+}
+
+.weapon-hero p {
+  color: #d0d5dd;
+}
+
+.weapon-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.weapon-stats div {
+  padding: 14px;
+  border: 1px solid rgb(217 164 65 / 45%);
+  border-radius: 8px;
+  background: rgb(255 255 255 / 6%);
+}
+
+.weapon-stats dd {
+  color: #ffd37a;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.weapon-tools {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.weapon-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 22px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.weapon-tabs button {
+  min-height: 38px;
+  border: 1px solid #d0d5dd;
+  border-radius: 999px;
+  background: #fff;
+  color: #344054;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  padding: 0 14px;
+  white-space: nowrap;
+}
+
+.weapon-tabs button.active {
+  border-color: #d9a441;
+  background: #101828;
+  color: #ffd37a;
+}
+
+.weapon-sections {
+  display: grid;
+  gap: 34px;
+}
+
+.weapon-section {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgb(16 24 40 / 96%), rgb(12 16 24 / 98%)),
+    #101828;
+}
+
+.weapon-section-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  border-bottom: 3px solid #d9a441;
+  padding-bottom: 10px;
+}
+
+.weapon-section-heading h3 {
+  margin: 0;
+  color: #ffd37a;
+  font-size: 24px;
+}
+
+.weapon-section-heading span {
+  color: #d0d5dd;
+  font-weight: 700;
+}
+
+.weapon-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.weapon-card {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  min-width: 0;
+  padding: 12px 8px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.weapon-card:hover {
+  border-color: #d9a441;
+  background: rgb(255 255 255 / 6%);
+}
+
+.weapon-card img {
+  width: 86px;
+  height: 86px;
+  object-fit: contain;
+}
+
+.weapon-card strong {
+  color: #ffd37a;
+  font-size: 14px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.weapon-card span {
+  color: #d0d5dd;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.weapon-detail {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 330px;
+  gap: 24px;
+  align-items: start;
+}
+
+.weapon-detail-main,
+.weapon-infobox {
+  border: 1px solid #2b2f38;
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgb(16 24 40 / 96%), rgb(10 13 20 / 98%)),
+    #101828;
+  color: #fff;
+}
+
+.weapon-detail-main {
+  display: grid;
+  gap: 20px;
+  padding: 28px;
+}
+
+.weapon-detail-main h1,
+.weapon-detail-main h2 {
+  color: #fff;
+}
+
+.weapon-detail-main p,
+.weapon-detail-main li {
+  color: #d0d5dd;
+}
+
+.info-section {
+  display: grid;
+  gap: 10px;
+  border-top: 2px solid #d9a441;
+  padding-top: 14px;
+}
+
+.info-section ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.weapon-infobox {
+  position: sticky;
+  top: 16px;
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+}
+
+.weapon-infobox img {
+  justify-self: center;
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.weapon-infobox h2 {
+  margin: 0;
+  color: #ffd37a;
+  text-align: center;
+}
+
+.weapon-infobox dl {
+  display: grid;
+  gap: 10px;
+}
+
+.weapon-infobox .meta-panel,
+.weapon-infobox div {
+  min-width: 0;
+}
+
+.weapon-infobox dd {
+  color: #fff;
+  overflow-wrap: anywhere;
+}
+
+.weapon-infobox a {
+  justify-content: center;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #d9a441;
+  color: #101828;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+}
+
+.weapon-infobox p {
+  margin: 0;
+  color: #d0d5dd;
+  font-size: 13px;
+}
+
+.related-weapon-strip {
+  display: grid;
+  gap: 12px;
+}
+
+.weapon-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.compact-weapon-card img {
+  width: 64px;
+  height: 64px;
+}
+
 @media (max-width: 860px) {
   .app-shell {
     width: min(100% - 24px, 680px);
@@ -521,11 +825,16 @@ dd {
   .topbar,
   .game-hero,
   .library-layout,
-  .category-dashboard {
+  .category-dashboard,
+  .feature-strip,
+  .weapon-hero,
+  .weapon-tools,
+  .weapon-detail {
     grid-template-columns: 1fr;
   }
 
-  .topbar {
+  .topbar,
+  .feature-strip {
     display: grid;
   }
 
@@ -557,5 +866,26 @@ dd {
 
   .guide-detail {
     padding: 18px;
+  }
+
+  .weapon-shell {
+    width: min(100% - 24px, 680px);
+  }
+
+  .weapon-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .weapon-mini-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .weapon-detail-main,
+  .weapon-hero {
+    padding: 18px;
+  }
+
+  .weapon-infobox {
+    position: static;
   }
 }

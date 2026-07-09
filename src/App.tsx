@@ -16,7 +16,14 @@ import {
 } from './content/games'
 import { guides } from './lib/content'
 import { filterGuides, uniqueValues } from './lib/search'
-import type { GuideEntry, GuideFilters } from './types'
+import {
+  filterWeapons,
+  findWeapon,
+  getWeaponsForGame,
+  groupWeaponsByCategory,
+  weaponCategoryLabels,
+} from './lib/weaponCatalog'
+import type { GuideEntry, GuideFilters, WeaponCategory, WeaponEntry } from './types'
 import './App.css'
 
 const defaultGameId = games[0]?.id ?? ''
@@ -32,6 +39,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Navigate to={`/games/${defaultGameId}`} replace />} />
       <Route path="/games/:gameId" element={<GuideLibrary />} />
+      <Route path="/games/:gameId/weapons" element={<WeaponCatalog />} />
+      <Route path="/games/:gameId/weapons/:weaponSlug" element={<WeaponDetail />} />
       <Route path="/games/:gameId/guides/:guideSlug" element={<GuideDetail />} />
       <Route path="*" element={<NotFound title="页面不存在" />} />
     </Routes>
@@ -115,6 +124,19 @@ function GuideLibrary() {
         activeCategory={filters.category}
         onSelect={updateCategory}
       />
+
+      <section className="feature-strip">
+        <div>
+          <p className="eyebrow">装备资料升级</p>
+          <h2>完整武器图鉴</h2>
+          <p>
+            已从 Fextralife Weapons 总页整理 21 类、193 把武器，按斧、弓、匕首、武士刀、法杖等细分展示。
+          </p>
+        </div>
+        <Link className="primary-link solid" to={`/games/${game.id}/weapons`}>
+          打开武器图鉴
+        </Link>
+      </section>
 
       <section className="library-layout" aria-label="攻略列表">
         <aside className="filter-panel">
@@ -390,6 +412,223 @@ function GuideDetail() {
         </section>
       )}
     </main>
+  )
+}
+
+function WeaponCatalog() {
+  const { gameId = defaultGameId } = useParams()
+  const game = games.find((item) => item.id === gameId)
+  const [query, setQuery] = useState('')
+  const [category, setCategory] = useState<WeaponCategory | 'all'>('all')
+
+  if (!game) return <NotFound title="未找到这个游戏" />
+
+  const gameWeapons = getWeaponsForGame(game.id)
+  const filtered = filterWeapons(gameWeapons, query, category)
+  const groups = groupWeaponsByCategory(filtered)
+  const categoryOptions = Array.from(
+    new Set(gameWeapons.map((weapon) => weapon.category)),
+  ).sort((first, second) =>
+    weaponCategoryLabels[first].localeCompare(weaponCategoryLabels[second], 'zh-Hans-CN'),
+  )
+
+  return (
+    <main className="app-shell weapon-shell">
+      <Header gameId={game.id} />
+      <Link className="back-link" to={`/games/${game.id}`}>
+        返回攻略库首页
+      </Link>
+
+      <section className="weapon-hero">
+        <div>
+          <p className="eyebrow">Weapons Catalog</p>
+          <h1>武器图鉴</h1>
+          <p>
+            按来源页面的武器分类和图标整理，适合快速查找斧、弓、匕首、武士刀、法杖、长矛等装备。
+          </p>
+        </div>
+        <dl className="weapon-stats">
+          <div>
+            <dt>武器总数</dt>
+            <dd>{gameWeapons.length}</dd>
+          </div>
+          <div>
+            <dt>细分类</dt>
+            <dd>{categoryOptions.length}</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section className="weapon-tools" aria-label="武器筛选">
+        <label className="field">
+          <span>搜索武器</span>
+          <input
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder="输入武器名、类型、单手、双手、法器..."
+          />
+        </label>
+        <SelectField
+          label="武器类型"
+          value={category}
+          onChange={(value) => setCategory(value as WeaponCategory | 'all')}
+          options={[
+            ['all', '全部武器类型'],
+            ...categoryOptions.map(
+              (item) => [item, weaponCategoryLabels[item]] as const,
+            ),
+          ]}
+        />
+      </section>
+
+      <div className="weapon-tabs" aria-label="武器类型快捷入口">
+        <button
+          type="button"
+          className={category === 'all' ? 'active' : ''}
+          onClick={() => setCategory('all')}
+        >
+          全部
+        </button>
+        {categoryOptions.map((item) => (
+          <button
+            key={item}
+            type="button"
+            className={category === item ? 'active' : ''}
+            onClick={() => setCategory(item)}
+          >
+            {weaponCategoryLabels[item]}
+          </button>
+        ))}
+      </div>
+
+      <div className="result-summary">
+        <h2>武器列表</h2>
+        <span>{filtered.length} 把</span>
+      </div>
+
+      {groups.length > 0 ? (
+        <div className="weapon-sections">
+          {groups.map(([groupCategory, items]) => (
+            <section key={groupCategory} className="weapon-section">
+              <div className="weapon-section-heading">
+                <h3>{weaponCategoryLabels[groupCategory]}</h3>
+                <span>{items.length} 把</span>
+              </div>
+              <div className="weapon-grid">
+                {items.map((weapon) => (
+                  <WeaponCard key={weapon.slug} weapon={weapon} />
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
+      ) : (
+        <EmptyState title="没有匹配武器" body="换一个关键词或重置武器类型。" />
+      )}
+    </main>
+  )
+}
+
+function WeaponDetail() {
+  const { gameId = '', weaponSlug = '' } = useParams()
+  const game = games.find((item) => item.id === gameId)
+  const weapon = findWeapon(gameId, weaponSlug)
+  const related = weapon
+    ? getWeaponsForGame(gameId)
+        .filter((item) => item.category === weapon.category && item.slug !== weapon.slug)
+        .slice(0, 8)
+    : []
+
+  if (!game) return <NotFound title="未找到这个游戏" />
+  if (!weapon) return <NotFound title="未找到这把武器" />
+
+  return (
+    <main className="app-shell weapon-shell">
+      <Header gameId={game.id} />
+      <Link className="back-link" to={`/games/${game.id}/weapons`}>
+        返回武器图鉴
+      </Link>
+
+      <article className="weapon-detail">
+        <section className="weapon-detail-main">
+          <p className="eyebrow">{weapon.categoryLabelZh}</p>
+          <h1>{weapon.name}</h1>
+          <p>
+            {weapon.name} 属于 {weapon.categoryLabelZh}，当前资料综合自 Fextralife Weapons
+            页面和该武器来源页；随机词条、稀有度和要求以游戏内实物为准。
+          </p>
+
+          <InfoSection title="获取方式" values={weapon.acquisition} />
+          <InfoSection title="商人 / 掉落备注" values={weapon.merchants} />
+          <InfoSection title="使用注意" values={weapon.notes} />
+
+          {related.length > 0 && (
+            <section className="related-weapon-strip">
+              <h2>同类武器</h2>
+              <div className="weapon-mini-grid">
+                {related.map((item) => (
+                  <WeaponCard key={item.slug} weapon={item} compact />
+                ))}
+              </div>
+            </section>
+          )}
+        </section>
+
+        <aside className="weapon-infobox" aria-label="武器资料卡">
+          <img src={weapon.iconUrl} alt={`${weapon.name} 图标`} />
+          <h2>{weapon.name}</h2>
+          <dl>
+            <Meta label="分类" values={[weapon.categoryLabelZh]} />
+            <Meta label="持握" values={[weapon.handedness]} />
+            <Meta label="阶级" values={[weapon.tier]} />
+            <Meta label="属性补正" values={[weapon.scaling]} />
+            <Meta label="装备要求" values={[weapon.requirements]} />
+            <Meta label="符文槽" values={weapon.runeSlots} />
+            <Meta label="复核日期" values={[weapon.lastVerifiedAt]} />
+          </dl>
+          <a href={weapon.sourceUrl} target="_blank" rel="noreferrer">
+            查看来源页
+          </a>
+          <p>{weapon.imageSourceNote}</p>
+        </aside>
+      </article>
+    </main>
+  )
+}
+
+function WeaponCard({
+  weapon,
+  compact = false,
+}: {
+  weapon: WeaponEntry
+  compact?: boolean
+}) {
+  return (
+    <Link
+      className={`weapon-card ${compact ? 'compact-weapon-card' : ''}`}
+      to={`/games/${weapon.gameId}/weapons/${weapon.slug}`}
+    >
+      <img src={weapon.iconUrl} alt={`${weapon.name} 图标`} />
+      <strong>{weapon.name}</strong>
+      {!compact && (
+        <span>
+          {weapon.categoryLabelZh} · {weapon.handedness}
+        </span>
+      )}
+    </Link>
+  )
+}
+
+function InfoSection({ title, values }: { title: string; values: string[] }) {
+  return (
+    <section className="info-section">
+      <h2>{title}</h2>
+      <ul>
+        {values.map((value) => (
+          <li key={value}>{value}</li>
+        ))}
+      </ul>
+    </section>
   )
 }
 

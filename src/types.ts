@@ -68,3 +68,48 @@ export type GuideFilters = {
   phase: string
   spoilerLevel: SpoilerLevel | 'all'
 }
+
+export type WeaponCategory =
+  | 'axes'
+  | 'bows'
+  | 'clubs'
+  | 'curved_great_swords'
+  | 'curved_swords'
+  | 'daggers'
+  | 'double_daggers'
+  | 'great_axes'
+  | 'great_clubs'
+  | 'great_hammers'
+  | 'great_swords'
+  | 'halberds'
+  | 'hammers'
+  | 'katanas'
+  | 'maces'
+  | 'rapiers'
+  | 'scythes'
+  | 'spears'
+  | 'staves'
+  | 'straight_swords'
+  | 'wands'
+
+export type WeaponEntry = {
+  slug: string
+  gameId: string
+  name: string
+  category: WeaponCategory
+  categoryLabel: string
+  categoryLabelZh: string
+  handedness: '单手' | '双手' | '远程' | '法器' | '未知'
+  iconUrl: string
+  sourceUrl: string
+  imageSourceNote: string
+  tier: string
+  scaling: string
+  requirements: string
+  runeSlots: string[]
+  acquisition: string[]
+  merchants: string[]
+  notes: string[]
+  lastVerifiedAt: string
+  searchText: string
+}
