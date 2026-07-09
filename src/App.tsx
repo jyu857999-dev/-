@@ -75,9 +75,9 @@ function GuideLibrary() {
     category,
     count: gameGuides.filter((guide) => guide.category === category).length,
   }))
-  const featuredGuides = gameGuides
-    .filter((guide) => guide.category !== 'equipment' && guide.category !== 'boss')
-    .slice(0, 6)
+  const featuredGuides = gameGuides.filter(
+    (guide) => guide.category !== 'equipment' && guide.category !== 'boss',
+  )
 
   return (
     <main className="app-shell">
@@ -161,7 +161,12 @@ function GuideLibrary() {
         </div>
         <div className="guide-grid home-guide-grid">
           {featuredGuides.map((guide) => (
-            <GuideCard key={`${guide.gameId}/${guide.slug}`} guide={guide} compact />
+            <GuideCard
+              key={`${guide.gameId}/${guide.slug}`}
+              guide={guide}
+              compact
+              dense
+            />
           ))}
         </div>
       </section>
@@ -873,15 +878,17 @@ function GuideCard({
   guide,
   compact = false,
   catalog = false,
+  dense = false,
 }: {
   guide: GuideEntry
   compact?: boolean
   catalog?: boolean
+  dense?: boolean
 }) {
   const image = guide.images[0]
   return (
     <Link
-      className={`guide-card ${compact ? 'compact-card' : ''} ${catalog ? 'catalog-card' : ''}`}
+      className={`guide-card ${compact ? 'compact-card' : ''} ${catalog ? 'catalog-card' : ''} ${dense ? 'dense-card' : ''}`}
       to={`/games/${guide.gameId}/guides/${guide.slug}`}
     >
       {image && <img className="card-image" src={image.url} alt={image.alt} />}
@@ -896,6 +903,11 @@ function GuideCard({
           {guide.equipmentType ?? guide.bossType ?? guide.region}
         </p>
       )}
+      {dense && (
+        <p className="dense-meta">
+          {guide.region} · {guide.phase}
+        </p>
+      )}
       {!compact && !catalog && (
         <dl>
           <div>
@@ -908,7 +920,7 @@ function GuideCard({
           </div>
         </dl>
       )}
-      <TagList values={guide.tags.slice(0, 4)} />
+      <TagList values={guide.tags.slice(0, dense ? 3 : 4)} />
     </Link>
   )
 }
