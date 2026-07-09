@@ -15,7 +15,6 @@ import {
   spoilerLabels,
 } from './content/games'
 import { guides } from './lib/content'
-import { filterGuides, uniqueValues } from './lib/search'
 import {
   bossCategoryLabels,
   filterBosses,
@@ -39,7 +38,6 @@ import type {
   BossCategory,
   BossEntry,
   GuideEntry,
-  GuideFilters,
   RuneEntry,
   WeaponCategory,
   WeaponEntry,
@@ -47,12 +45,6 @@ import type {
 import './App.css'
 
 const defaultGameId = games[0]?.id ?? ''
-const defaultFilters: GuideFilters = {
-  category: 'all',
-  region: 'all',
-  phase: 'all',
-  spoilerLevel: 'all',
-}
 
 function App() {
   return (
@@ -75,56 +67,17 @@ function GuideLibrary() {
   const { gameId = defaultGameId } = useParams()
   const navigate = useNavigate()
   const game = games.find((item) => item.id === gameId)
-  const [query, setQuery] = useState('')
-  const [filters, setFilters] = useState<GuideFilters>(defaultFilters)
-  const [equipmentType, setEquipmentType] = useState('all')
-  const [bossType, setBossType] = useState('all')
-  const [buildTag, setBuildTag] = useState('all')
 
   if (!game) return <NotFound title="未找到这个游戏" />
 
   const gameGuides = guides.filter((guide) => guide.gameId === game.id)
-  const regions = uniqueValues(gameGuides, 'region')
-  const phases = uniqueValues(gameGuides, 'phase')
-  const equipmentTypes = uniqueOptionalValues(
-    gameGuides.filter((guide) => guide.category === 'equipment'),
-    'equipmentType',
-  )
-  const bossTypes = uniqueOptionalValues(
-    gameGuides.filter((guide) => guide.category === 'boss'),
-    'bossType',
-  )
-  const buildTags = Array.from(
-    new Set(gameGuides.flatMap((guide) => guide.buildTags ?? [])),
-  ).sort((a, b) => a.localeCompare(b, 'zh-Hans-CN'))
   const categoryStats = game.supportedCategories.map((category) => ({
     category,
     count: gameGuides.filter((guide) => guide.category === category).length,
   }))
-  const effectiveEquipmentType =
-    filters.category === 'equipment' || filters.category === 'all'
-      ? equipmentType
-      : 'all'
-  const effectiveBossType =
-    filters.category === 'boss' || filters.category === 'all' ? bossType : 'all'
-  const effectiveBuildTag =
-    filters.category === 'build' || filters.category === 'all' ? buildTag : 'all'
-  const results = filterGuides(gameGuides, game.id, query, filters).filter(
-    (guide) =>
-      (effectiveEquipmentType === 'all' ||
-        guide.equipmentType === effectiveEquipmentType) &&
-      (effectiveBossType === 'all' || guide.bossType === effectiveBossType) &&
-      (effectiveBuildTag === 'all' || guide.buildTags?.includes(effectiveBuildTag)),
-  )
-  const isCatalogMode =
-    filters.category === 'equipment' || filters.category === 'boss'
-
-  function updateCategory(category: GuideFilters['category']) {
-    setFilters({ ...filters, category })
-    if (category !== 'equipment' && category !== 'all') setEquipmentType('all')
-    if (category !== 'boss' && category !== 'all') setBossType('all')
-    if (category !== 'build' && category !== 'all') setBuildTag('all')
-  }
+  const featuredGuides = gameGuides
+    .filter((guide) => guide.category !== 'equipment' && guide.category !== 'boss')
+    .slice(0, 6)
 
   return (
     <main className="app-shell">
@@ -142,12 +95,6 @@ function GuideLibrary() {
           <SourceNotice />
         </div>
       </section>
-
-      <CategoryDashboard
-        stats={categoryStats}
-        activeCategory={filters.category}
-        onSelect={updateCategory}
-      />
 
       <section className="feature-strip">
         <div>
@@ -170,202 +117,75 @@ function GuideLibrary() {
         </div>
       </section>
 
-      <section className="library-layout" aria-label="攻略列表">
-        <aside className="filter-panel">
-          <label className="field">
-            <span>搜索</span>
-            <input
-              value={query}
-              onChange={(event) => setQuery(event.target.value)}
-              placeholder="任务、地点、NPC、道具、Boss、装备..."
-            />
-          </label>
-
-          <SelectField
-            label="分类"
-            value={filters.category}
-            onChange={(value) =>
-              updateCategory(value as GuideFilters['category'])
-            }
-            options={[
-              ['all', '全部分类'],
-              ...game.supportedCategories.map(
-                (category) => [category, categoryLabels[category]] as const,
-              ),
-            ]}
-          />
-
-          <SelectField
-            label="区域"
-            value={filters.region}
-            onChange={(value) => setFilters({ ...filters, region: value })}
-            options={[['all', '全部区域'], ...regions.map((item) => [item, item] as const)]}
-          />
-
-          <SelectField
-            label="阶段"
-            value={filters.phase}
-            onChange={(value) => setFilters({ ...filters, phase: value })}
-            options={[['all', '全部阶段'], ...phases.map((item) => [item, item] as const)]}
-          />
-
-          {(filters.category === 'equipment' || filters.category === 'all') && (
-            <SelectField
-              label="装备类型"
-              value={equipmentType}
-              onChange={setEquipmentType}
-              options={[
-                ['all', '全部装备类型'],
-                ...equipmentTypes.map((item) => [item, item] as const),
-              ]}
-            />
-          )}
-
-          {(filters.category === 'boss' || filters.category === 'all') && (
-            <SelectField
-              label="Boss 类型"
-              value={bossType}
-              onChange={setBossType}
-              options={[
-                ['all', '全部 Boss 类型'],
-                ...bossTypes.map((item) => [item, item] as const),
-              ]}
-            />
-          )}
-
-          {(filters.category === 'build' || filters.category === 'all') && (
-            <SelectField
-              label="Build 标签"
-              value={buildTag}
-              onChange={setBuildTag}
-              options={[
-                ['all', '全部 Build 标签'],
-                ...buildTags.map((item) => [item, item] as const),
-              ]}
-            />
-          )}
-
-          <SelectField
-            label="剧透"
-            value={filters.spoilerLevel}
-            onChange={(value) =>
-              setFilters({
-                ...filters,
-                spoilerLevel: value as GuideFilters['spoilerLevel'],
-              })
-            }
-            options={[
-              ['all', '全部剧透级别'],
-              ...Object.entries(spoilerLabels),
-            ]}
-          />
-
-          <button
-            type="button"
-            className="ghost-button"
-            onClick={() => {
-              setQuery('')
-              setFilters(defaultFilters)
-              setEquipmentType('all')
-              setBossType('all')
-              setBuildTag('all')
-            }}
-          >
-            重置筛选
-          </button>
-        </aside>
-
-        <div className="guide-results">
-          <div className="result-summary">
-            <h2>攻略条目</h2>
-            <span>{results.length} 篇</span>
+      <section className="home-catalog-panel" aria-label="图鉴入口">
+        <div className="home-catalog-heading">
+          <div>
+            <p className="eyebrow">Database</p>
+            <h2>核心图鉴</h2>
           </div>
+          <span>优先用这里查对象，再进详情看打法、属性和来源。</span>
+        </div>
+        <div className="home-catalog-grid">
+          <HomeCatalogCard
+            to={`/games/${game.id}/weapons`}
+            title="武器图鉴"
+            count="193"
+            body="按斧、弓、匕首、武士刀、法杖、长矛等类型分组；详情页包含定位、符文建议、获取方式和使用注意。"
+          />
+          <HomeCatalogCard
+            to={`/games/${game.id}/bosses`}
+            title="Boss 图鉴"
+            count="8"
+            body="按主线、支线和 Boss 类型整理；详情页包含战前准备、阶段流程、招式应对和新手常见错误。"
+          />
+          <HomeCatalogCard
+            to={`/games/${game.id}/runes`}
+            title="符文图鉴"
+            count="222"
+            body="保留成本、攻击类型、兼容武器、获取方式等表格字段，适合搭配武器和 Build 查询。"
+          />
+        </div>
+      </section>
 
-          {isCatalogMode ? (
-            <CatalogSections
-              guides={results}
-              mode={filters.category === 'equipment' ? 'equipment' : 'boss'}
-            />
-          ) : (
-            <div className="guide-grid">
-              {results.map((guide) => (
-                <GuideCard key={`${guide.gameId}/${guide.slug}`} guide={guide} />
-              ))}
-            </div>
-          )}
-
-          {results.length === 0 && (
-            <EmptyState title="没有匹配攻略" body="换一个关键词或重置筛选试试。" />
-          )}
+      <section className="home-guide-panel" aria-label="攻略摘要">
+        <div className="result-summary">
+          <h2>攻略摘要</h2>
+          <span>{gameGuides.length} 篇资料</span>
+        </div>
+        <div className="category-stat-row">
+          {categoryStats.map(({ category, count }) => (
+            <span key={category}>
+              {categoryLabels[category]}：{count}
+            </span>
+          ))}
+        </div>
+        <div className="guide-grid home-guide-grid">
+          {featuredGuides.map((guide) => (
+            <GuideCard key={`${guide.gameId}/${guide.slug}`} guide={guide} compact />
+          ))}
         </div>
       </section>
     </main>
   )
 }
 
-function CategoryDashboard({
-  stats,
-  activeCategory,
-  onSelect,
+function HomeCatalogCard({
+  to,
+  title,
+  count,
+  body,
 }: {
-  stats: { category: GuideEntry['category']; count: number }[]
-  activeCategory: GuideFilters['category']
-  onSelect: (category: GuideFilters['category']) => void
+  to: string
+  title: string
+  count: string
+  body: string
 }) {
-  const total = stats.reduce((sum, item) => sum + item.count, 0)
   return (
-    <section className="category-dashboard" aria-label="分类总览">
-      <button
-        type="button"
-        className={activeCategory === 'all' ? 'active' : ''}
-        onClick={() => onSelect('all')}
-      >
-        <span>全部</span>
-        <strong>{total}</strong>
-      </button>
-      {stats.map(({ category, count }) => (
-        <button
-          key={category}
-          type="button"
-          className={activeCategory === category ? 'active' : ''}
-          onClick={() => onSelect(category)}
-        >
-          <span>{categoryLabels[category]}</span>
-          <strong>{count}</strong>
-        </button>
-      ))}
-    </section>
-  )
-}
-
-function CatalogSections({
-  guides,
-  mode,
-}: {
-  guides: GuideEntry[]
-  mode: 'equipment' | 'boss'
-}) {
-  const grouped = groupCatalogGuides(guides, mode)
-  return (
-    <div className="catalog-sections">
-      {grouped.map(([label, items]) => (
-        <section key={label} className="catalog-section">
-          <div className="catalog-heading">
-            <h3>{label}</h3>
-            <span>{items.length} 项</span>
-          </div>
-          <div className="catalog-grid">
-            {items.map((guide) => (
-              <GuideCard
-                key={`${guide.gameId}/${guide.slug}`}
-                guide={guide}
-                catalog
-              />
-            ))}
-          </div>
-        </section>
-      ))}
-    </div>
+    <Link className="home-catalog-card" to={to}>
+      <span>{count} 项</span>
+      <h3>{title}</h3>
+      <p>{body}</p>
+    </Link>
   )
 }
 
@@ -1241,30 +1061,8 @@ function NotFound({ title }: { title: string }) {
   )
 }
 
-function uniqueOptionalValues(
-  entries: GuideEntry[],
-  key: 'equipmentType' | 'bossType',
-) {
-  return Array.from(
-    new Set(entries.map((entry) => entry[key]).filter(Boolean) as string[]),
-  ).sort((a, b) => a.localeCompare(b, 'zh-Hans-CN'))
-}
-
 function optionalValue(value: string | undefined) {
   return value ? [value] : []
-}
-
-function groupCatalogGuides(guides: GuideEntry[], mode: 'equipment' | 'boss') {
-  const fallback = mode === 'equipment' ? '未分类装备' : '未分类 Boss'
-  const groups = new Map<string, GuideEntry[]>()
-  for (const guide of guides) {
-    const label =
-      (mode === 'equipment' ? guide.equipmentType : guide.bossType) ?? fallback
-    groups.set(label, [...(groups.get(label) ?? []), guide])
-  }
-  return Array.from(groups.entries()).sort(([first], [second]) =>
-    first.localeCompare(second, 'zh-Hans-CN'),
-  )
 }
 
 export default App
