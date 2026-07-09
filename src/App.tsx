@@ -53,8 +53,14 @@ function GuideLibrary() {
   const gameGuides = guides.filter((guide) => guide.gameId === game.id)
   const regions = uniqueValues(gameGuides, 'region')
   const phases = uniqueValues(gameGuides, 'phase')
-  const equipmentTypes = uniqueOptionalValues(gameGuides, 'equipmentType')
-  const bossTypes = uniqueOptionalValues(gameGuides, 'bossType')
+  const equipmentTypes = uniqueOptionalValues(
+    gameGuides.filter((guide) => guide.category === 'equipment'),
+    'equipmentType',
+  )
+  const bossTypes = uniqueOptionalValues(
+    gameGuides.filter((guide) => guide.category === 'boss'),
+    'bossType',
+  )
   const buildTags = Array.from(
     new Set(gameGuides.flatMap((guide) => guide.buildTags ?? [])),
   ).sort((a, b) => a.localeCompare(b, 'zh-Hans-CN'))
@@ -62,12 +68,30 @@ function GuideLibrary() {
     category,
     count: gameGuides.filter((guide) => guide.category === category).length,
   }))
+  const effectiveEquipmentType =
+    filters.category === 'equipment' || filters.category === 'all'
+      ? equipmentType
+      : 'all'
+  const effectiveBossType =
+    filters.category === 'boss' || filters.category === 'all' ? bossType : 'all'
+  const effectiveBuildTag =
+    filters.category === 'build' || filters.category === 'all' ? buildTag : 'all'
   const results = filterGuides(gameGuides, game.id, query, filters).filter(
     (guide) =>
-      (equipmentType === 'all' || guide.equipmentType === equipmentType) &&
-      (bossType === 'all' || guide.bossType === bossType) &&
-      (buildTag === 'all' || guide.buildTags?.includes(buildTag)),
+      (effectiveEquipmentType === 'all' ||
+        guide.equipmentType === effectiveEquipmentType) &&
+      (effectiveBossType === 'all' || guide.bossType === effectiveBossType) &&
+      (effectiveBuildTag === 'all' || guide.buildTags?.includes(effectiveBuildTag)),
   )
+  const isCatalogMode =
+    filters.category === 'equipment' || filters.category === 'boss'
+
+  function updateCategory(category: GuideFilters['category']) {
+    setFilters({ ...filters, category })
+    if (category !== 'equipment' && category !== 'all') setEquipmentType('all')
+    if (category !== 'boss' && category !== 'all') setBossType('all')
+    if (category !== 'build' && category !== 'all') setBuildTag('all')
+  }
 
   return (
     <main className="app-shell">
@@ -89,12 +113,7 @@ function GuideLibrary() {
       <CategoryDashboard
         stats={categoryStats}
         activeCategory={filters.category}
-        onSelect={(category) =>
-          setFilters({
-            ...filters,
-            category,
-          })
-        }
+        onSelect={updateCategory}
       />
 
       <section className="library-layout" aria-label="攻略列表">
@@ -112,10 +131,7 @@ function GuideLibrary() {
             label="分类"
             value={filters.category}
             onChange={(value) =>
-              setFilters({
-                ...filters,
-                category: value as GuideFilters['category'],
-              })
+              updateCategory(value as GuideFilters['category'])
             }
             options={[
               ['all', '全部分类'],
@@ -139,35 +155,41 @@ function GuideLibrary() {
             options={[['all', '全部阶段'], ...phases.map((item) => [item, item] as const)]}
           />
 
-          <SelectField
-            label="装备类型"
-            value={equipmentType}
-            onChange={setEquipmentType}
-            options={[
-              ['all', '全部装备类型'],
-              ...equipmentTypes.map((item) => [item, item] as const),
-            ]}
-          />
+          {(filters.category === 'equipment' || filters.category === 'all') && (
+            <SelectField
+              label="装备类型"
+              value={equipmentType}
+              onChange={setEquipmentType}
+              options={[
+                ['all', '全部装备类型'],
+                ...equipmentTypes.map((item) => [item, item] as const),
+              ]}
+            />
+          )}
 
-          <SelectField
-            label="Boss 类型"
-            value={bossType}
-            onChange={setBossType}
-            options={[
-              ['all', '全部 Boss 类型'],
-              ...bossTypes.map((item) => [item, item] as const),
-            ]}
-          />
+          {(filters.category === 'boss' || filters.category === 'all') && (
+            <SelectField
+              label="Boss 类型"
+              value={bossType}
+              onChange={setBossType}
+              options={[
+                ['all', '全部 Boss 类型'],
+                ...bossTypes.map((item) => [item, item] as const),
+              ]}
+            />
+          )}
 
-          <SelectField
-            label="Build 标签"
-            value={buildTag}
-            onChange={setBuildTag}
-            options={[
-              ['all', '全部 Build 标签'],
-              ...buildTags.map((item) => [item, item] as const),
-            ]}
-          />
+          {(filters.category === 'build' || filters.category === 'all') && (
+            <SelectField
+              label="Build 标签"
+              value={buildTag}
+              onChange={setBuildTag}
+              options={[
+                ['all', '全部 Build 标签'],
+                ...buildTags.map((item) => [item, item] as const),
+              ]}
+            />
+          )}
 
           <SelectField
             label="剧透"
@@ -205,11 +227,18 @@ function GuideLibrary() {
             <span>{results.length} 篇</span>
           </div>
 
-          <div className="guide-grid">
-            {results.map((guide) => (
-              <GuideCard key={`${guide.gameId}/${guide.slug}`} guide={guide} />
-            ))}
-          </div>
+          {isCatalogMode ? (
+            <CatalogSections
+              guides={results}
+              mode={filters.category === 'equipment' ? 'equipment' : 'boss'}
+            />
+          ) : (
+            <div className="guide-grid">
+              {results.map((guide) => (
+                <GuideCard key={`${guide.gameId}/${guide.slug}`} guide={guide} />
+              ))}
+            </div>
+          )}
 
           {results.length === 0 && (
             <EmptyState title="没有匹配攻略" body="换一个关键词或重置筛选试试。" />
@@ -252,6 +281,37 @@ function CategoryDashboard({
         </button>
       ))}
     </section>
+  )
+}
+
+function CatalogSections({
+  guides,
+  mode,
+}: {
+  guides: GuideEntry[]
+  mode: 'equipment' | 'boss'
+}) {
+  const grouped = groupCatalogGuides(guides, mode)
+  return (
+    <div className="catalog-sections">
+      {grouped.map(([label, items]) => (
+        <section key={label} className="catalog-section">
+          <div className="catalog-heading">
+            <h3>{label}</h3>
+            <span>{items.length} 项</span>
+          </div>
+          <div className="catalog-grid">
+            {items.map((guide) => (
+              <GuideCard
+                key={`${guide.gameId}/${guide.slug}`}
+                guide={guide}
+                catalog
+              />
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
   )
 }
 
@@ -333,11 +393,19 @@ function GuideDetail() {
   )
 }
 
-function GuideCard({ guide, compact = false }: { guide: GuideEntry; compact?: boolean }) {
+function GuideCard({
+  guide,
+  compact = false,
+  catalog = false,
+}: {
+  guide: GuideEntry
+  compact?: boolean
+  catalog?: boolean
+}) {
   const image = guide.images[0]
   return (
     <Link
-      className={`guide-card ${compact ? 'compact-card' : ''}`}
+      className={`guide-card ${compact ? 'compact-card' : ''} ${catalog ? 'catalog-card' : ''}`}
       to={`/games/${guide.gameId}/guides/${guide.slug}`}
     >
       {image && <img className="card-image" src={image.url} alt={image.alt} />}
@@ -346,8 +414,13 @@ function GuideCard({ guide, compact = false }: { guide: GuideEntry; compact?: bo
         <strong>{contentStatusLabels[guide.contentStatus]}</strong>
       </div>
       <h3>{guide.title}</h3>
-      <p>{guide.summary}</p>
-      {!compact && (
+      {!catalog && <p>{guide.summary}</p>}
+      {catalog && (
+        <p className="catalog-type">
+          {guide.equipmentType ?? guide.bossType ?? guide.region}
+        </p>
+      )}
+      {!compact && !catalog && (
         <dl>
           <div>
             <dt>区域</dt>
@@ -518,6 +591,19 @@ function uniqueOptionalValues(
 
 function optionalValue(value: string | undefined) {
   return value ? [value] : []
+}
+
+function groupCatalogGuides(guides: GuideEntry[], mode: 'equipment' | 'boss') {
+  const fallback = mode === 'equipment' ? '未分类装备' : '未分类 Boss'
+  const groups = new Map<string, GuideEntry[]>()
+  for (const guide of guides) {
+    const label =
+      (mode === 'equipment' ? guide.equipmentType : guide.bossType) ?? fallback
+    groups.set(label, [...(groups.get(label) ?? []), guide])
+  }
+  return Array.from(groups.entries()).sort(([first], [second]) =>
+    first.localeCompare(second, 'zh-Hans-CN'),
+  )
 }
 
 export default App

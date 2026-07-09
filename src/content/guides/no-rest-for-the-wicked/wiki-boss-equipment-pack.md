@@ -57,7 +57,7 @@ prerequisites: [推进序章到首领战]
 rewards: [主线推进, 首领奖励]
 spoilerLevel: major
 tags: [Boss, Warrick, 主线, 新手墙]
-bossType: 主线首领
+bossType: 兽型 Boss
 summary: Warrick the Torn 是开局阶段最重要的战斗门槛，打法核心是看完连段再输出。
 updatedAt: 2026-07-09
 example: false
@@ -70,6 +70,7 @@ lastVerifiedAt: 2026-07-09
 ## Boss 信息
 
 - 类型：主线首领。
+- 体型分类：兽型 Boss。
 - 作用：检验基础战斗系统，包括闪避方向、体力管理、轻重攻击节奏。
 - 准备：至少保证有足够治疗品，主武器手感要熟，不建议临时换没练过的武器。
 
@@ -101,7 +102,7 @@ prerequisites: [推进到无名入口相关战斗]
 rewards: [1 件任务独特品, 随机物品]
 spoilerLevel: major
 tags: [Boss, The Riven Twins, 裂痕双子, 主线]
-bossType: 主线首领
+bossType: 双目标 Boss
 summary: The Riven Twins 资料显示弱点为火，强效对抗为瘟疫，核心是控制站位和分辨双目标压力。
 updatedAt: 2026-07-09
 example: false
@@ -114,6 +115,7 @@ lastVerifiedAt: 2026-07-09
 ## Boss 信息
 
 - 可选 Boss：否。
+- 体型分类：双目标 Boss / 人形压力战。
 - 位置：无名入口。
 - 弱点：火。
 - 强效对抗：瘟疫。
@@ -147,7 +149,7 @@ prerequisites: [推进 Falstead Darak 相关主线]
 rewards: [主线推进, 首领奖励]
 spoilerLevel: major
 tags: [Boss, Falstead Darak, 主线, 阶段战]
-bossType: 主线首领
+bossType: 人形 Boss
 summary: Falstead Darak 是重型压迫型首领，重点不是抢伤害，而是识别阶段和大后摇窗口。
 updatedAt: 2026-07-09
 example: false
@@ -159,7 +161,7 @@ lastVerifiedAt: 2026-07-09
 
 ## Boss 信息
 
-Falstead Darak 是 Fextralife Bosses 页面列出的主线 Boss 之一。它适合作为中前期装备强度与战斗节奏的综合检查点。
+Falstead Darak 是 Fextralife Bosses 页面列出的主线 Boss 之一。它归入人形 Boss，适合作为中前期装备强度与战斗节奏的综合检查点。
 
 ## 打法思路
 
@@ -189,7 +191,7 @@ prerequisites: [进入 Echo Knight 相关挑战]
 rewards: [高价值奖励, 后期推进]
 spoilerLevel: major
 tags: [Boss, Echo Knight, 后期, 挑战]
-bossType: 主线首领
+bossType: 人形 Boss
 summary: Echo Knight 属于后期高压首领，挑战前应确认 Build、补给、抗性和耐久都已准备好。
 updatedAt: 2026-07-09
 example: false
@@ -201,7 +203,7 @@ lastVerifiedAt: 2026-07-09
 
 ## Boss 信息
 
-Echo Knight 是 Fextralife Bosses 页面列出的 Boss。相较前期首领，它更适合在 Build 成型后挑战。
+Echo Knight 是 Fextralife Bosses 页面列出的 Boss，归入人形 Boss / 后期挑战。相较前期首领，它更适合在 Build 成型后挑战。
 
 ## 打法思路
 
@@ -231,7 +233,7 @@ prerequisites: [触发 The Lost Huntress 相关挑战]
 rewards: [首领奖励, 随机物品]
 spoilerLevel: major
 tags: [Boss, The Lost Huntress, 支线, 猎手]
-bossType: 支线首领
+bossType: 人形 Boss
 summary: The Lost Huntress 属于机动型 Boss，重点是拉开视角、等突进结束后反击。
 updatedAt: 2026-07-09
 example: false
@@ -243,7 +245,7 @@ lastVerifiedAt: 2026-07-09
 
 ## Boss 信息
 
-Fextralife 独立页面确认 The Lost Huntress 为 Boss 条目。当前条目先整理打法框架；具体弱点、抗性、掉落数值后续需要按版本继续复核。
+Fextralife 独立页面确认 The Lost Huntress 为 Boss 条目。当前归入人形 Boss / 猎手型首领；具体弱点、抗性、掉落数值后续需要按版本继续复核。
 
 ## 打法思路
 
@@ -269,7 +271,7 @@ prerequisites: [触发 The Caretaker and the Tusk 相关挑战]
 rewards: [首领奖励, 随机物品]
 spoilerLevel: major
 tags: [Boss, Caretaker, Tusk, 支线, 双目标]
-bossType: 支线首领
+bossType: 双目标 Boss
 summary: The Caretaker and the Tusk 的难点在组合压力，先整理站位，再考虑爆发输出。
 updatedAt: 2026-07-09
 example: false
@@ -281,7 +283,7 @@ lastVerifiedAt: 2026-07-09
 
 ## Boss 信息
 
-Fextralife 独立页面确认 The Caretaker and the Tusk 为 Boss 条目。名字暗示战斗会给玩家多目标或组合节奏压力，具体数值仍需复核。
+Fextralife 独立页面确认 The Caretaker and the Tusk 为 Boss 条目。当前归入双目标 Boss / 组合压力首领，具体数值仍需复核。
 
 ## 打法思路
 
@@ -307,7 +309,7 @@ prerequisites: [触发 The Winged Brood 相关挑战]
 rewards: [首领奖励, 随机物品]
 spoilerLevel: major
 tags: [Boss, Winged Brood, 支线, 飞行]
-bossType: 支线首领
+bossType: 飞行兽型 Boss
 summary: The Winged Brood 适合按飞行/跃击 Boss 思路处理，先避开落点，再抓落地后摇。
 updatedAt: 2026-07-09
 example: false
@@ -319,7 +321,7 @@ lastVerifiedAt: 2026-07-09
 
 ## Boss 信息
 
-Fextralife 独立页面确认 The Winged Brood 为 Boss 条目。当前抓取到图鉴图片，但弱点、抗性和掉落仍需后续复核。
+Fextralife 独立页面确认 The Winged Brood 为 Boss 条目。当前归入飞行兽型 Boss，已抓取到图鉴图片，但弱点、抗性和掉落仍需后续复核。
 
 ## 打法思路
 
@@ -345,7 +347,7 @@ prerequisites: [触发 The Unbreakable Egg 相关挑战]
 rewards: [待复核]
 spoilerLevel: major
 tags: [Boss, Unbreakable Egg, 支线, 待复核]
-bossType: 支线首领
+bossType: 特殊 Boss
 summary: The Unbreakable Egg 已建立资料入口，等待补齐图片、弱点、抗性、位置和奖励。
 updatedAt: 2026-07-09
 example: false
@@ -357,7 +359,7 @@ lastVerifiedAt: 2026-07-09
 
 ## 当前状态
 
-Fextralife 独立页面确认 The Unbreakable Egg 存在，但本轮未稳定抓取到可用图鉴图片和完整资料。先把它作为 Boss 索引入口加入，避免搜索时漏掉。
+Fextralife 独立页面确认 The Unbreakable Egg 存在。当前归入特殊 Boss / 机制目标；本轮未稳定抓取到可用图鉴图片和完整资料，先作为 Boss 索引入口加入，避免搜索时漏掉。
 
 ## 后续补全清单
 

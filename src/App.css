@@ -206,6 +206,43 @@ p {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.catalog-sections {
+  display: grid;
+  gap: 28px;
+}
+
+.catalog-section {
+  display: grid;
+  gap: 14px;
+}
+
+.catalog-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 2px solid #d9a441;
+  padding-bottom: 8px;
+}
+
+.catalog-heading h3 {
+  margin: 0;
+  color: #101828;
+  font-size: 22px;
+}
+
+.catalog-heading span {
+  color: #667085;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
 .guide-card {
   display: grid;
   gap: 12px;
@@ -226,12 +263,58 @@ p {
   min-height: 260px;
 }
 
+.guide-card.catalog-card {
+  align-content: start;
+  min-height: 0;
+  padding: 14px;
+  border-color: #2f3440;
+  background:
+    linear-gradient(180deg, rgb(16 24 40 / 92%), rgb(13 18 28 / 96%)),
+    #101828;
+  color: #fff;
+}
+
+.guide-card.catalog-card:hover {
+  border-color: #d9a441;
+  box-shadow: 0 12px 30px rgb(0 0 0 / 18%);
+}
+
 .card-image {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 8px;
   background: #d0d5dd;
+}
+
+.catalog-card .card-image {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: rgb(255 255 255 / 6%);
+}
+
+.catalog-card .card-topline {
+  color: #d0d5dd;
+}
+
+.catalog-card .card-topline strong {
+  background: rgb(217 164 65 / 18%);
+  color: #ffd37a;
+}
+
+.catalog-card h3 {
+  margin: 0;
+  color: #ffd37a;
+  font-size: 17px;
+  text-align: center;
+}
+
+.catalog-type {
+  margin: 0;
+  color: #d0d5dd;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: center;
 }
 
 .guide-card:hover {
@@ -457,6 +540,7 @@ dd {
 
   .guide-grid,
   .guide-grid.compact,
+  .catalog-grid,
   .meta-panel,
   .image-gallery {
     grid-template-columns: 1fr;
