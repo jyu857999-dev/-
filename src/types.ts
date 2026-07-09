@@ -113,3 +113,46 @@ export type WeaponEntry = {
   lastVerifiedAt: string
   searchText: string
 }
+
+export type BossCategory = 'main_story' | 'side_quest'
+
+export type BossEntry = {
+  slug: string
+  gameId: string
+  name: string
+  category: BossCategory
+  categoryLabelZh: string
+  bossType: string
+  optional: string
+  location: string[]
+  quest: string[]
+  weakness: string[]
+  strongAgainst: string[]
+  resistantTo: string[]
+  immuneTo: string[]
+  rewards: string[]
+  imageUrl: string
+  sourceUrl: string
+  summary: string
+  preparation: string[]
+  strategy: string[]
+  attacks: { name: string; counter: string }[]
+  notes: string[]
+  lastVerifiedAt: string
+  searchText: string
+}
+
+export type RuneEntry = {
+  slug: string
+  gameId: string
+  name: string
+  description: string
+  cost: string
+  attackType: string
+  compatibleWeaponType: string
+  whereToFind: string
+  category: 'melee' | 'ranged' | 'magic' | 'utility' | 'unknown'
+  sourceUrl: string
+  lastVerifiedAt: string
+  searchText: string
+}

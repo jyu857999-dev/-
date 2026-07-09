@@ -35,6 +35,27 @@ dt {
   font-size: 20px;
 }
 
+.topnav {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.topnav a {
+  border: 1px solid #d0d5dd;
+  border-radius: 999px;
+  color: #344054;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  border-color: #d9a441;
+  color: #101828;
+}
+
 .game-switcher,
 .field {
   display: grid;
@@ -90,6 +111,12 @@ a:focus-visible {
   border: 1px solid #ead08f;
   border-radius: 8px;
   background: #fff8e6;
+}
+
+.feature-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .feature-strip h2,
@@ -590,7 +617,7 @@ dd {
 
 .weapon-tools {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 260px;
+  grid-template-columns: minmax(0, 1fr) 220px 220px;
   gap: 14px;
   margin-bottom: 16px;
 }
@@ -663,6 +690,10 @@ dd {
   gap: 16px;
 }
 
+.boss-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .weapon-card {
   display: grid;
   justify-items: center;
@@ -685,6 +716,14 @@ dd {
   width: 86px;
   height: 86px;
   object-fit: contain;
+}
+
+.boss-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 6px;
 }
 
 .weapon-card strong {
@@ -762,6 +801,31 @@ dd {
   object-fit: contain;
 }
 
+.missing-image,
+.rune-mark {
+  display: grid;
+  place-items: center;
+  justify-self: center;
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgb(217 164 65 / 45%);
+  border-radius: 8px;
+  background: rgb(255 255 255 / 6%);
+  color: #ffd37a;
+  font-weight: 800;
+}
+
+.missing-image.small {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+.rune-mark {
+  border-radius: 50%;
+  font-size: 54px;
+}
+
 .weapon-infobox h2 {
   margin: 0;
   color: #ffd37a;
@@ -816,13 +880,50 @@ dd {
   height: 64px;
 }
 
+.data-table-wrap {
+  overflow-x: auto;
+  border: 1px solid rgb(217 164 65 / 45%);
+  border-radius: 8px;
+}
+
+.data-table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+  color: #fff;
+  font-size: 14px;
+}
+
+.data-table th,
+.data-table td {
+  border-bottom: 1px solid rgb(255 255 255 / 12%);
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.data-table th {
+  background: rgb(217 164 65 / 24%);
+  color: #ffd37a;
+  font-weight: 800;
+}
+
+.data-table tr:nth-child(even) td {
+  background: rgb(255 255 255 / 5%);
+}
+
+.data-table a {
+  color: #ffd37a;
+  font-weight: 800;
+  text-decoration: none;
+}
+
 @media (max-width: 860px) {
   .app-shell {
     width: min(100% - 24px, 680px);
     padding-top: 12px;
   }
 
-  .topbar,
   .game-hero,
   .library-layout,
   .category-dashboard,
@@ -833,9 +934,17 @@ dd {
     grid-template-columns: 1fr;
   }
 
-  .topbar,
   .feature-strip {
     display: grid;
+  }
+
+  .topbar {
+    display: grid;
+  }
+
+  .topnav {
+    margin-left: 0;
+    overflow-x: auto;
   }
 
   .game-hero {
@@ -874,6 +983,10 @@ dd {
 
   .weapon-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .boss-grid {
+    grid-template-columns: 1fr;
   }
 
   .weapon-mini-grid {

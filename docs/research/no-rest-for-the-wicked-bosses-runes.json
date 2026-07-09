@@ -1,0 +1,3415 @@
+{
+  "sourceUrls": [
+    "https://norestforthewicked.wiki.fextralife.com/Bosses",
+    "https://norestforthewicked.wiki.fextralife.com/Runes"
+  ],
+  "lastFetchedAt": "2026-07-09T14:54:27.806Z",
+  "bossCount": 8,
+  "runeCount": 222,
+  "bosses": [
+    {
+      "slug": "warrick-the-torn",
+      "gameId": "no-rest-for-the-wicked",
+      "categoryLabelZh": "主线 Boss",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Warrick+The+Torn",
+      "notes": [],
+      "lastVerifiedAt": "2026-07-09",
+      "name": "Warrick The Torn",
+      "category": "main_story",
+      "bossType": "大型变异人形",
+      "optional": "否",
+      "location": [
+        "Orban Glades，Sacrament 城门附近"
+      ],
+      "quest": [
+        "序章通往 Sacrament 的主线推进"
+      ],
+      "weakness": [
+        "火"
+      ],
+      "strongAgainst": [
+        "瘟疫"
+      ],
+      "resistantTo": [
+        "无稳定抗性记录"
+      ],
+      "immuneTo": [
+        "无稳定免疫记录"
+      ],
+      "rewards": [
+        "随机物品",
+        "Corpse Smeared Blade 概率掉落",
+        "Plague Ichor"
+      ],
+      "imageUrl": "https://norestforthewicked.wiki.fextralife.com/file/No-Rest-For-The-Wicked/warrick-the-torn-boss-no-rest-for-the-wicked-wiki-guide.jpg",
+      "summary": "第一批主线 Boss。动作前摇清楚，主要考验玩家是否能等招式收尾后从侧面或背后反击。",
+      "preparation": [
+        "准备火属性或高爆发武器。",
+        "保留体力用于连续闪避，不要在正面贪完整连段。"
+      ],
+      "strategy": [
+        "下劈、360 度挥砍、突刺和双重挥砍都有明显蓄力；看到抬刀或身体前压时先横向闪避。",
+        "低血量后会追加跳砸。Boss 起跳后目标点基本锁定在你原位置，立刻横移离开落点。",
+        "多数攻击覆盖正面，真正安全的输出窗口在招式落空后的侧后方。"
+      ],
+      "attacks": [
+        {
+          "name": "下劈",
+          "counter": "抬刀后横向闪避，落地硬直时侧面反击。"
+        },
+        {
+          "name": "旋身挥砍",
+          "counter": "等他贴近再翻滚或侧移，过早闪避容易被追到。"
+        },
+        {
+          "name": "突刺",
+          "counter": "蓄力时间较长，等刺出瞬间侧闪。"
+        },
+        {
+          "name": "跳砸",
+          "counter": "低血量阶段出现，起跳后立即离开原站位。"
+        }
+      ]
+    },
+    {
+      "slug": "the-riven-twins",
+      "gameId": "no-rest-for-the-wicked",
+      "categoryLabelZh": "主线 Boss",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/The+Riven+Twins",
+      "notes": [],
+      "lastVerifiedAt": "2026-07-09",
+      "name": "The Riven Twins",
+      "category": "main_story",
+      "bossType": "双子大型人形",
+      "optional": "否",
+      "location": [
+        "The Nameless Pass"
+      ],
+      "quest": [
+        "Servant of God"
+      ],
+      "weakness": [
+        "火"
+      ],
+      "strongAgainst": [
+        "瘟疫"
+      ],
+      "resistantTo": [
+        "无稳定抗性记录"
+      ],
+      "immuneTo": [
+        "无稳定免疫记录"
+      ],
+      "rewards": [
+        "随机物品",
+        "Laquered Bow 概率掉落",
+        "Fetid Club 概率掉落",
+        "Plague Ichor"
+      ],
+      "imageUrl": "https://norestforthewicked.wiki.fextralife.com/file/No-Rest-For-The-Wicked/the-riven-twins-boss-no-rest-for-the-wicked-wiki-guide.jpg",
+      "summary": "用长柄武器压制空间的主线 Boss。难点在于大范围扫击、瘟疫球和地面瘟疫区会逐步限制走位。",
+      "preparation": [
+        "先清支线和探索提升等级，避免低等级硬打。",
+        "火属性伤害收益较高。"
+      ],
+      "strategy": [
+        "中近距离重点处理横扫和插地攻击。横扫可向内闪避抢反击，插地动作慢，可侧闪后输出。",
+        "远距离会用纵向砸地、瘟疫球和连段推进；不要一直后退，避免被逼到场地边缘。",
+        "后半段会制造瘟疫水泡并留下危险区域，应把水泡引到边缘再回到中心作战。"
+      ],
+      "attacks": [
+        {
+          "name": "长柄横扫",
+          "counter": "熟悉节奏后向 Boss 内侧闪避，结束后立即短连段反击。"
+        },
+        {
+          "name": "插地 / 砸地",
+          "counter": "动作慢，侧向离开直线范围即可。"
+        },
+        {
+          "name": "瘟疫球",
+          "counter": "看准弹道横移，躲完后利用施法硬直靠近。"
+        },
+        {
+          "name": "瘟疫水泡",
+          "counter": "先引到场地边缘，避免安全区域被持续伤害区切碎。"
+        }
+      ]
+    },
+    {
+      "slug": "the-caretaker-and-the-tusk",
+      "gameId": "no-rest-for-the-wicked",
+      "categoryLabelZh": "主线 Boss",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/The+Caretaker+and+the+Tusk",
+      "notes": [],
+      "lastVerifiedAt": "2026-07-09",
+      "name": "The Caretaker and the Tusk",
+      "category": "main_story",
+      "bossType": "双目标 Boss",
+      "optional": "是/否待复核",
+      "location": [
+        "Temple of Day and Night，Marin Woods"
+      ],
+      "quest": [
+        "Marin Woods 主线推进"
+      ],
+      "weakness": [
+        "来源未稳定标注"
+      ],
+      "strongAgainst": [
+        "来源未稳定标注"
+      ],
+      "resistantTo": [
+        "来源未稳定标注"
+      ],
+      "immuneTo": [
+        "来源未稳定标注"
+      ],
+      "rewards": [
+        "Basic Hide",
+        "Boar Tusk",
+        "The Caretaker's Habit",
+        "Human Bone",
+        "Plague Ichor"
+      ],
+      "imageUrl": "https://norestforthewicked.wiki.fextralife.com/file/No-Rest-For-The-Wicked/the-caretaker-the-tusk-boss-nrftw-wiki-guide-300px.jpg",
+      "summary": "照看者与巨兽同时行动的双目标战。攻击源多，优先目标和场地观察比单纯输出更重要。",
+      "preparation": [
+        "使用机动性较好的武器，避免重武器长时间锁动画。",
+        "保持视角能同时看到 Tusk 和 Caretaker。"
+      ],
+      "strategy": [
+        "Tusk 冲撞可引向墙面，最后一刻闪开让它撞墙，争取输出窗口。",
+        "Caretaker 会瞬移并接直线地波、范围震荡或召唤横穿场地的小怪；看到紫色提示先脱离范围。",
+        "来源说明攻击 Caretaker 时会同时影响 Tusk，可根据当前安全窗口选择攻击 Caretaker 来间接压低 Tusk。"
+      ],
+      "attacks": [
+        {
+          "name": "Tusk 冲撞",
+          "counter": "贴近墙边诱导，最后横向闪避。"
+        },
+        {
+          "name": "连续踏地",
+          "counter": "最多多次下砸，看到抬身后先拉开，别急着回头输出。"
+        },
+        {
+          "name": "Caretaker 地波",
+          "counter": "地波走直线，横向移动即可避开。"
+        },
+        {
+          "name": "召唤穿场生物",
+          "counter": "只沿短直线冲刺，观察路线后侧移。"
+        }
+      ]
+    },
+    {
+      "slug": "the-lost-huntress",
+      "gameId": "no-rest-for-the-wicked",
+      "categoryLabelZh": "主线 Boss",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/The+Lost+Huntress",
+      "notes": [],
+      "lastVerifiedAt": "2026-07-09",
+      "name": "The Lost Huntress",
+      "category": "main_story",
+      "bossType": "兽型变异 Boss",
+      "optional": "是/否待复核",
+      "location": [
+        "Lowland Meadows"
+      ],
+      "quest": [
+        "The Weeping Sisters"
+      ],
+      "weakness": [
+        "来源未稳定标注"
+      ],
+      "strongAgainst": [
+        "来源未稳定标注"
+      ],
+      "resistantTo": [
+        "来源未稳定标注"
+      ],
+      "immuneTo": [
+        "来源未稳定标注"
+      ],
+      "rewards": [
+        "False Noble Gauntlets",
+        "Plague Ichor"
+      ],
+      "imageUrl": "https://norestforthewicked.wiki.fextralife.com/file/No-Rest-For-The-Wicked/the-lost-huntress-boss-nrftw-wiki-guide-300px.jpg",
+      "summary": "被瘟疫侵蚀的兽型 Boss。前半段以冲锋、啃咬、拍击为主，半血后加入更大范围的地面爆发。",
+      "preparation": [
+        "优先准备能快速脱离的轻中型武器。",
+        "保持场地外圈可用，避免被连续冲锋逼到死角。"
+      ],
+      "strategy": [
+        "三连冲锋和多段啃咬都会在起手时锁定方向，看到起身或后缩时向侧面走位。",
+        "半血后 Lara 会从怪物口中出现并制造蓝色地面爆点；爆点会跟随玩家，靠近 Boss 诱导后立刻闪出。",
+        "直线爆发会沿线延伸，等第一段爆开后侧移，不要沿线后退。"
+      ],
+      "attacks": [
+        {
+          "name": "三连冲锋爪击",
+          "counter": "起身锁定后横向跑或侧闪。"
+        },
+        {
+          "name": "连续啃咬",
+          "counter": "每次后缩都是提示，拉开或侧闪，不要贴脸硬拼。"
+        },
+        {
+          "name": "单次砸地",
+          "counter": "抬身后向侧面闪避。"
+        },
+        {
+          "name": "地面爆点 / 爆发线",
+          "counter": "引导到 Boss 附近后离开蓝点；直线爆发侧移处理。"
+        }
+      ]
+    },
+    {
+      "slug": "the-winged-brood",
+      "gameId": "no-rest-for-the-wicked",
+      "categoryLabelZh": "主线 Boss",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/The+Winged+Brood",
+      "notes": [],
+      "lastVerifiedAt": "2026-07-09",
+      "name": "The Winged Brood",
+      "category": "main_story",
+      "bossType": "飞行群体 Boss",
+      "optional": "否",
+      "location": [
+        "Nameless Pass"
+      ],
+      "quest": [
+        "Faith and Flames"
+      ],
+      "weakness": [
+        "来源未稳定标注"
+      ],
+      "strongAgainst": [
+        "来源未稳定标注"
+      ],
+      "resistantTo": [
+        "来源未稳定标注"
+      ],
+      "immuneTo": [
+        "来源未稳定标注"
+      ],
+      "rewards": [
+        "Winged Brood Wing",
+        "Plague Ichor",
+        "Ashen Trousers"
+      ],
+      "imageUrl": "https://norestforthewicked.wiki.fextralife.com/file/No-Rest-For-The-Wicked/the-winged-brood-boss-nrftw-wiki-guide-300px.png",
+      "summary": "三阶段飞行群体战。第一阶段是多只 Winged Brood，后续 Bile Wretch 和 Blood Wraith 会加入。",
+      "preparation": [
+        "准备能快速击杀单体的武器，减少多 Boss 同场时间。",
+        "阶段转换时优先处理新出现的大型目标。"
+      ],
+      "strategy": [
+        "第一阶段的小型飞行敌人攻击模式一致，俯冲、爪击、翼扫都能通过观察起飞高度和尖叫动作预判。",
+        "第二阶段 Bile Wretch 下场后要尽快击杀，否则第三阶段 Blood Wraith 加入会形成双 Boss 压力。",
+        "不要被飞行目标拖到场地边缘；每次躲完俯冲后回到开阔位置。"
+      ],
+      "attacks": [
+        {
+          "name": "俯冲",
+          "counter": "飞高后会向当前位置俯冲，向前或侧面闪避。"
+        },
+        {
+          "name": "爪击",
+          "counter": "低空悬停是提示，向侧面闪避。"
+        },
+        {
+          "name": "翼扫",
+          "counter": "尖叫后准备后闪。"
+        },
+        {
+          "name": "Bile Wretch 冲锋",
+          "counter": "尖叫后横向闪避，避免被连续推进。"
+        }
+      ]
+    },
+    {
+      "slug": "falstead-darak",
+      "gameId": "no-rest-for-the-wicked",
+      "categoryLabelZh": "支线 Boss",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Falstead+Darak",
+      "notes": [],
+      "lastVerifiedAt": "2026-07-09",
+      "name": "Falstead Darak",
+      "category": "side_quest",
+      "bossType": "人形首领",
+      "optional": "是",
+      "location": [
+        "Mariner's Keep",
+        "The Black Trench",
+        "Orban Galdes"
+      ],
+      "quest": [
+        "Of Rats and Raiders"
+      ],
+      "weakness": [
+        "火"
+      ],
+      "strongAgainst": [
+        "瘟疫"
+      ],
+      "resistantTo": [
+        "无稳定抗性记录"
+      ],
+      "immuneTo": [
+        "无稳定免疫记录"
+      ],
+      "rewards": [
+        "随机物品",
+        "Stag of Embers 概率掉落",
+        "Falstead's Fury",
+        "Falstead's Barricade",
+        "Plague Ichor"
+      ],
+      "imageUrl": "https://norestforthewicked.wiki.fextralife.com/file/No-Rest-For-The-Wicked/falstead-derek-boss-no-rest-for-the-wicked-wiki-guide.jpg",
+      "summary": "Risen 首领，支线中会多次交手。招式池不大，但连段有时会追加一两击。",
+      "preparation": [
+        "火属性有效。",
+        "不要在他第一段连击后立刻贪刀，先确认是否有追加动作。"
+      ],
+      "strategy": [
+        "第一次交手整体难度较低；核心是等连段完全结束再反击。",
+        "黑沟重战时压力更高，要把每次攻击后的短暂停顿当成主要输出窗口。",
+        "他会被固定连段锁住，玩家可以利用这一点绕侧面或背后输出。"
+      ],
+      "attacks": [
+        {
+          "name": "武器连击",
+          "counter": "等最后一击落空后再进攻，避免被追加击打断。"
+        },
+        {
+          "name": "前压攻击",
+          "counter": "横向闪避，保持中距离观察。"
+        },
+        {
+          "name": "重战阶段压制",
+          "counter": "保留体力，优先处理生存而不是换血。"
+        }
+      ]
+    },
+    {
+      "slug": "echo-knight",
+      "gameId": "no-rest-for-the-wicked",
+      "categoryLabelZh": "支线 Boss",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Echo+Knight",
+      "notes": [],
+      "lastVerifiedAt": "2026-07-09",
+      "name": "Echo Knight",
+      "category": "side_quest",
+      "bossType": "骑乘人形 Boss",
+      "optional": "是",
+      "location": [
+        "Cerim Crucible"
+      ],
+      "quest": [
+        "Spoken and Unspoken"
+      ],
+      "weakness": [
+        "来源未稳定标注"
+      ],
+      "strongAgainst": [
+        "来源未稳定标注"
+      ],
+      "resistantTo": [
+        "来源未稳定标注"
+      ],
+      "immuneTo": [
+        "来源未稳定标注"
+      ],
+      "rewards": [
+        "随机物品",
+        "Wind of Death 概率掉落",
+        "Plague Ichor"
+      ],
+      "imageUrl": "https://norestforthewicked.wiki.fextralife.com/file/No-Rest-For-The-Wicked/echo-knight-boss-no-rest-for-the-wicked-wiki-guide.jpg",
+      "summary": "试炼中的骑乘 Boss。长枪、冲锋、瘟疫球和蓝焰地面限制会不断压缩空间。",
+      "preparation": [
+        "保持耐心，优先规避冲锋和地面蓝焰。",
+        "使用短硬直武器更容易抓四颗瘟疫球后的窗口。"
+      ],
+      "strategy": [
+        "开局可能直接冲锋或投掷瘟疫球。若投球，向 Boss 两侧闪避，第四颗后通常有短暂输出机会。",
+        "冲锋躲过后不要立刻贴近，转身时长枪也可能造成伤害。",
+        "蓝色火焰会停留一段时间。可以把火焰引到场地边缘，避免核心区域被封锁。",
+        "低血量时攻击频率增加，瘟疫球、践踏和蓝焰可能连续出现，必须减少贪刀。"
+      ],
+      "attacks": [
+        {
+          "name": "骑乘冲锋",
+          "counter": "横向闪避，等转身动作结束后再靠近。"
+        },
+        {
+          "name": "四连瘟疫球",
+          "counter": "向两侧或斜前方闪避，第四颗后反击。"
+        },
+        {
+          "name": "长枪快刺",
+          "counter": "第一刺命中后立刻闪第二刺，不要硬直站桩。"
+        },
+        {
+          "name": "连续践踏",
+          "counter": "被第一下击倒也不要慌，起身前继续等节奏闪避。"
+        },
+        {
+          "name": "蓝焰地面爆发",
+          "counter": "离开脚下爆点，并把残留火焰引到场地边缘。"
+        }
+      ]
+    },
+    {
+      "slug": "the-unbreakable-egg",
+      "gameId": "no-rest-for-the-wicked",
+      "categoryLabelZh": "支线 Boss",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/The+Unbreakable+Egg",
+      "notes": [
+        "来源页未提供稳定 Boss 图片，后续需从其他可靠来源补图。"
+      ],
+      "lastVerifiedAt": "2026-07-09",
+      "name": "The Unbreakable Egg",
+      "category": "side_quest",
+      "bossType": "人形镰刀 Boss",
+      "optional": "是",
+      "location": [
+        "Marin Woods"
+      ],
+      "quest": [
+        "支线 Boss"
+      ],
+      "weakness": [
+        "来源未稳定标注"
+      ],
+      "strongAgainst": [
+        "来源未稳定标注"
+      ],
+      "resistantTo": [
+        "来源未稳定标注"
+      ],
+      "immuneTo": [
+        "来源未稳定标注"
+      ],
+      "rewards": [
+        "击败后不直接掉落 Boss 物品",
+        "后续可开启宝箱：gold、Armor Shard、Crooked Key、Stallion Sentiel Shield、Saltstone、Legs of the Egg、Crown of the Egg、Champion of the Egg、Clutch of the Egg"
+      ],
+      "imageUrl": "",
+      "summary": "羽毛装束、蛋壳头盔、使用镰刀的支线 Boss。招式数量少，但单次伤害高。",
+      "preparation": [
+        "保持横向移动，避免被远距离镰刀投掷贯穿。",
+        "不要在四连挥砍中途反击。"
+      ],
+      "strategy": [
+        "镰刀投掷覆盖距离很长，向侧面跑比后退更稳定。",
+        "四连挥砍之间有短暂停顿，等完整四段结束后再输出。",
+        "跳砸接旋身挥击需要整体躲开；看到跳到最高点时立刻向远端移动。"
+      ],
+      "attacks": [
+        {
+          "name": "双向镰刀投掷",
+          "counter": "向侧面跑或闪，不要沿直线后退。"
+        },
+        {
+          "name": "四连挥砍",
+          "counter": "观察抬武器节奏，完整结束后再进场。"
+        },
+        {
+          "name": "跳砸接旋身",
+          "counter": "跳到高点时远离落点，继续避开后续挥击。"
+        }
+      ]
+    }
+  ],
+  "runes": [
+    {
+      "slug": "drone-trap",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Drone Trap",
+      "description": "Dodge through the air and thrust your weapon onto the target",
+      "cost": "50 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "All Weapons (Except Bows)",
+      "whereToFind": "Purchased from Illaria",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "dropkick",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Dropkick",
+      "description": "Flying kick — 1500% Physical, +20 Poise Dmg, +150% Kickback.",
+      "cost": "30 Stamina",
+      "attackType": "Melee",
+      "compatibleWeaponType": "All Weapons (Except Bows)",
+      "whereToFind": "Purchased from Illaria",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "frontflip-kick",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Frontflip Kick",
+      "description": "Somersault stomp — 1500% Physical, +10 Poise Dmg, +150% Kickback.",
+      "cost": "20 Stamina",
+      "attackType": "Melee",
+      "compatibleWeaponType": "All Weapons (Except Bows)",
+      "whereToFind": "Purchased from Illaria",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "regurgitate",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Regurgitate",
+      "description": "Toxic bile stream; poisons and leaves a 25s plague pool.",
+      "cost": "50 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "All Weapons (Except Bows)",
+      "whereToFind": "Purchased from The Seneschal",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "swipe-kick",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Swipe Kick",
+      "description": "Spinning roundhouse — 3000% Physical, +10 Poise Dmg, +150% Kickback.",
+      "cost": "40 Stamina",
+      "attackType": "Melee",
+      "compatibleWeaponType": "All Weapons (Except Bows)",
+      "whereToFind": "Purchased from Illaria",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "throw-axe",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Throw Axe",
+      "description": "Homing spinning axe — Physical, -30% More, +20 Poise Dmg, +100% Kickback.",
+      "cost": "50 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "All Weapons (Except Bows)",
+      "whereToFind": "Purchased from Illaria",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "throw-knife",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Throw Knife",
+      "description": "Homing knife — Physical, no modifier, +10 Poise Dmg, +100% Kickback.",
+      "cost": "25 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "All Weapons (Except Bows)",
+      "whereToFind": "Purchased from Illaria",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "turnback-kick",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Turnback Kick",
+      "description": "Backward kick — 2000% Physical, +10 Poise Dmg, +200% Kickback.",
+      "cost": "30 Stamina",
+      "attackType": "Melee",
+      "compatibleWeaponType": "All Weapons (Except Bows)",
+      "whereToFind": "Purchased from Illaria",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "arrowstorm",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Arrowstorm",
+      "description": "Signal arrow calls down a rain of 10 homing arrows (x2 at Charge 2).",
+      "cost": "150 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Bows",
+      "whereToFind": "Extracted from Fungus Strung Bow",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "breakstep",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Breakstep",
+      "description": "Kicks target back then fires 3 quick arrows.",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Bows",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "cone-shot",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Cone Shot",
+      "description": "Fans 9 arrows in a tight cone (-20% More).",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Bows",
+      "whereToFind": "Extracted from Siren's Call",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "crosscut",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Crosscut",
+      "description": "Two sweeping cuts then somersaults away and fires a parting shot.",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Bows",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "evasive-shot",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Evasive Shot",
+      "description": "Leaps backward and fires simultaneously — 200% Physical, +200% Kickback.",
+      "cost": "50 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Bows",
+      "whereToFind": "Extracted from Twined Recurve Bow",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "flipkick-burst",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Flipkick Burst",
+      "description": "Upward kick into backflip releases 5 homing arrows (50% More each).",
+      "cost": "125 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Bows",
+      "whereToFind": "Extracted from Pale Ash",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "glideburst",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Glideburst",
+      "description": "Slides forward firing 3 quick arrows.",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Bows",
+      "whereToFind": "Extracted from Woodland Protector",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "knockout-shot",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Knockout Shot",
+      "description": "Single arrow — 300% Physical, +200% Kickback, Knocks Down, Breaks Block.",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Bows",
+      "whereToFind": "Extracted from Patience",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "multi-shot",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Multi Shot",
+      "description": "Rapid volley of 3-10 homing arrows (10% More each).",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Bows",
+      "whereToFind": "Extracted from Yew Longbow",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "retreating-trimshot",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Retreating Trimshot",
+      "description": "Backflips away while firing 6 arrows (30% More each).",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Bows",
+      "whereToFind": "Extracted from Balak Talon",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "skyburst-volley",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Skyburst Volley",
+      "description": "Launches into air, fires 5 spreading arrows downward (70% More each).",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Bows",
+      "whereToFind": "Extracted from Answered Prayer",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "skyfall-shot",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Skyfall Shot",
+      "description": "Jumps high and plunges arrow down; shockwave on impact.",
+      "cost": "50 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Bows",
+      "whereToFind": "Extracted from Short Bow",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "firefall",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Firefall",
+      "description": "Vaults up and drives an arrow into the ground, igniting the area.",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Bows",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "skybreaker",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Skybreaker",
+      "description": "Leaps up and drives an arrow down; triggers a lightning strike on nearby enemies.",
+      "cost": "50 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Bows",
+      "whereToFind": "Extracted from Twinkling Short Bow",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "fire-arrow",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Fire Arrow",
+      "description": "Flaming arrow; fully charged hits 130% More with +10 Poise Dmg.",
+      "cost": "20 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Bows",
+      "whereToFind": "Extracted from Lacquered Bow",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "ice-arrow",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Ice Arrow",
+      "description": "Frost-enchanted shot — 30% More Ice Damage.",
+      "cost": "20 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Bows",
+      "whereToFind": "Extracted from Lacquered Bow",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "lightning-arrow",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Lightning Arrow",
+      "description": "Electrified arrow — 30% More Lightning Damage.",
+      "cost": "20 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Bows",
+      "whereToFind": "Extracted from Lacquered Bow",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "plague-arrow",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Plague Arrow",
+      "description": "Toxic arrow — 30% More Plague Damage.",
+      "cost": "20 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Bows",
+      "whereToFind": "Extracted from Lacquered Bow",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "dashing-stab",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Dashing Stab",
+      "description": "13-hit rapid piercing series at reduced power (-70% More per hit).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Dual Wielding Double Daggers",
+      "whereToFind": "Extracted from Chipped Daggers",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "double-take",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Double Take",
+      "description": "Double strike Knocks Down (50% More x2), plus two lighter follow-up hits.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Dual Wielding Double Daggers",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "dual-breaker",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Dual Breaker",
+      "description": "Cross-slash with Bleed Damage — 150% More x2, Breaks Block.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Dual Wielding Double Daggers",
+      "whereToFind": "Extracted from Brothers Keepers",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "dual-flurry",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Dual Flurry",
+      "description": "12-hit barrage at -85% More per hit — pure sustained pressure.",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Dual Wielding Double Daggers",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "dual-slash",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Dual Slash",
+      "description": "Two-hit overhead combo — 100% More on first hit.",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Dual Wielding Double Daggers",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "piercing-dodge",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Piercing Dodge",
+      "description": "Dodge an attack then counter with a 2-hit pierce (100% More each).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Dual Wielding Double Daggers",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "tornado-spin",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Tornado Spin",
+      "description": "Block-breaking whirlwind — 6 hits, -25% More, Breaks Block.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Dual Wielding Double Daggers",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "wild-rush",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Wild Rush",
+      "description": "Charge forward with 6 rapid dagger strikes (30% More each).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Dual Wielding Double Daggers",
+      "whereToFind": "Extracted from Butcher's Work",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "lightning-claw",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Lightning Claw",
+      "description": "Dash + 4 rapid lightning claw strikes (25% More each).",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Dual Wielding Double Daggers",
+      "whereToFind": "Extracted from Ash Soothed Daggers",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "bare-knuckle",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Bare Knuckle",
+      "description": "Lunging haymaker — 300% Physical, +20 Poise Dmg, +200% Kickback, Knocks Down.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Dual Wielding Gauntlets",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "breakrush",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Breakrush",
+      "description": "Five-hit punch barrage (75% More each, +10 Poise Dmg).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Dual Wielding Gauntlets",
+      "whereToFind": "Extracted from Crystal Fist",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "buster-rift",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Buster Rift",
+      "description": "Ground tremor wave + heavier follow-up slide strike (75% / 375% More).",
+      "cost": "125 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Dual Wielding Gauntlets",
+      "whereToFind": "Extracted from Shellguard Gauntlets",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "cyclone-kick",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Cyclone Kick",
+      "description": "Aerial 3-hit sweeping kick (150% More each, +150% Kickback).",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Dual Wielding Gauntlets",
+      "whereToFind": "Extracted from Nith Grovebinders",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "dragonfly-kick",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Dragonfly Kick",
+      "description": "Arc up and dive foot-first — 2-hit (100% More each, +150% Kickback).",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Dual Wielding Gauntlets",
+      "whereToFind": "Extracted from Gossamer Gauntlets",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "drive-break",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Drive Break",
+      "description": "Charge and single crushing punch — 300% Physical, +200% Kickback.",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Dual Wielding Gauntlets",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "recoil-strike",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Recoil Strike",
+      "description": "Dash back then rising uppercut — 500% Physical, +200% Kickback.",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Dual Wielding Gauntlets",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "skyfall-smash",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Skyfall Smash",
+      "description": "Leaps and crashes down — 450% Physical x2 + shockwave, +20 Poise Dmg.",
+      "cost": "125 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Dual Wielding Gauntlets",
+      "whereToFind": "Extracted from Emerald Talons",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "tempest-kick",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Tempest Kick",
+      "description": "Aerial 6-hit spinning kick assault, +10 Poise Dmg, +100% Kickback.",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Dual Wielding Gauntlets",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "tremor-wave",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Tremor Wave",
+      "description": "Ground punch sends shockwave — 350% Physical, +10 Poise Dmg, +100% Kickback.",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Dual Wielding Gauntlets",
+      "whereToFind": "Extracted from Deadfang",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "plague-retch",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Plague Retch",
+      "description": "Evade backward then fire homing plague projectile — 300% More, +150% Kickback.",
+      "cost": "50 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Dual Wielding Gauntlets",
+      "whereToFind": "Extracted from Cursed Unguis",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "rising-fang",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Rising Fang",
+      "description": "Blazing uppercut — 200% Fire, +200% Kickback, Knocks Down.",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Dual Wielding Gauntlets",
+      "whereToFind": "Extracted from Sun's Scorn",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "spirit-burst",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Spirit Burst",
+      "description": "Focused lightning fist projectile — 300% Lightning, +20 Poise Dmg, +150% Kickback.",
+      "cost": "50 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Dual Wielding Gauntlets",
+      "whereToFind": "Extracted from Woven Wraps",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "advancing-flurry",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Advancing Flurry",
+      "description": "Push through enemies with 4 rapid hits (+20 Poise Dmg, +100% Kickback each).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Reclaimer",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "air-dodge",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Air Dodge",
+      "description": "Roll through air to dodge, then counter stab — 300% Physical, +200% Kickback.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Moonshaft",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "brutal-reprise",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Brutal Reprise",
+      "description": "Three heavy swings (+10 Poise Dmg, +100% Kickback each).",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Blacksmith's Folly",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "charge-strike",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Charge Strike",
+      "description": "Dash + devastating hit — 300% Physical, +200% Kickback, Breaks Block.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Grimacing Stone",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "circular",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Circular",
+      "description": "Two wide arc spins — 100% Physical x2, +20 Poise Dmg, Breaks Block.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Broken Forge",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "crush",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Crush",
+      "description": "Overhead spin into ground slam — 200% Physical, Knocks Down, Breaks Block.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Petaled Spear",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "crushing-flurry",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Crushing Flurry",
+      "description": "Six heavy swings (-20% More each, +10 Poise Dmg, +50% Kickback).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Nail-Laden Club",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "double-spin",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Double Spin",
+      "description": "Two spinning block-breaking hits (35% More each, +100% Kickback).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Governor's Dagger",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "evasive-pierce",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Evasive Pierce",
+      "description": "Knockdown hit then immediately retreat — 300% Physical, +200% Kickback.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Tucked Falcon",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "evasive-strike",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Evasive Strike",
+      "description": "Step right + quick powerful strike — 150% Physical, +20 Poise Dmg, +100% Kickback.",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Spirit Edge",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "evasive-swing",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Evasive Swing",
+      "description": "Step left while swinging in evasive arc — 300% Physical, +100% Kickback.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Tortured Blade",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "fierce-dash",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Fierce Dash",
+      "description": "Burst forward and stab to knock down — 300% Physical, Knocks Down.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from A Singular Purpose",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "gyro-slash",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Gyro Slash",
+      "description": "Spin forward slicing twice — 35% Physical x2, Breaks Block.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Gnarled Harpoon",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "jump-cut",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Jump Cut",
+      "description": "Leap + block-breaking downward slash — 300% Physical, Breaks Block.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Wooden Sword",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "leap",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Leap",
+      "description": "Jump forward + block-breaking slam — 300% Physical, +20 Poise Dmg, Breaks Block.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Singing Peal",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "overrun",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Overrun",
+      "description": "Three-hit combo ending in full-body lunge (50% More each, +130% Kickback).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Whetted Wedge",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "piercing-dash",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Piercing Dash",
+      "description": "Dash + deep penetrating strike — 300% Physical, +150% Kickback.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Hunter's Knife",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "piercing-flurry",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Piercing Flurry",
+      "description": "Eight-hit alternating rapid pierce sequence.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Pig Sticker",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "piercing-spin",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Piercing Spin",
+      "description": "Double spinning strike — Knocks Down, Breaks Block, +200% Kickback.",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "slamdown",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Slamdown",
+      "description": "Leap + area crash — 200% Physical, +20 Poise Dmg, Breaks Block.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Governor's Sword",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "slashing-dash",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Slashing Dash",
+      "description": "Dash + heavy slash — 300% Physical, +200% Kickback.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from The Last Word",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "slashing-dodge",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Slashing Dodge",
+      "description": "Step back + block-breaking slash lunge — 300% Physical, Breaks Block.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Nith Blade",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "slashing-flurry",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Slashing Flurry",
+      "description": "Six rapid slashes (-60% More each, +10 Poise Dmg, +50% Kickback).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Cerulean Blade",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "slashing-pirouette",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Slashing Pirouette",
+      "description": "Graceful 2-hit pirouette — 100% More each, Breaks Block.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Etched Yatagan",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "spin",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Spin",
+      "description": "Two-hit wheel sweep — 100% More each, Breaks Block.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Blood-Rusted Sword",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "surge-slash",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Surge Slash",
+      "description": "Spinning charge — 100% Physical, Knocks Down, Breaks Block.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Malice",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "taunt-strike",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Taunt Strike",
+      "description": "Taunt enemies then land block-breaking blow — 500% Physical.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Ripper",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "throw",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Throw",
+      "description": "Hurl weapon through enemies and return — 50% Physical x2.",
+      "cost": "50 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "thrust",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Thrust",
+      "description": "Forward thrust — 100% Physical, Knocks Down, Breaks Block.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Cleric's Mace",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "tornado-strike",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Tornado Strike",
+      "description": "Rapid axis spin — 3 block-breaking hits (+10 Poise Dmg, +100% Kickback).",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Harvester's Bonesaw",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "trinity-barrage",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Trinity Barrage",
+      "description": "Three consecutive strikes (25% More each, +100% Kickback).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Brutal Maul",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "triple-swipe",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Triple Swipe",
+      "description": "Three block-breaking slashes (50% More each, +100% Kickback).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "twirl-dash",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Twirl Dash",
+      "description": "Spiral dash with 5 block-breaking spinning strikes (-50% More each).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Scimitar",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "twirl-spin",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Twirl Spin",
+      "description": "Two-hit spinning whirlwind — 150% More each, Breaks Block.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Assegai",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "whirl",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Whirl",
+      "description": "Six rapid spins hitting all nearby enemies (-30% More each).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Tongue Splitter",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "whirlstep-strike",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Whirlstep Strike",
+      "description": "Two-hit whirl with heavy impact (150% More each).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Rostock",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "blazing-rupture",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Blazing Rupture",
+      "description": "Ground smash fire burst + spinning fire arc — 200% Fire each.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Unholy Hearth",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "fire-dash",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Fire Dash",
+      "description": "Flame-wreathed dash — 250% Fire, +20 Poise Dmg, +200% Kickback.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "fire-flurry",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Fire Flurry",
+      "description": "Six rapid fiery strikes (-60% More each, +20 Poise Dmg, +50% Kickback).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Coiled Dawn",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "fire-throw",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Fire Throw",
+      "description": "Fling flaming weapon through enemies and return — 25% Fire x2.",
+      "cost": "50 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Climber's Pick",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "fire-whirl",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Fire Whirl",
+      "description": "Six-hit fiery whirlwind — Breaks Block each hit.",
+      "cost": "150 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Talwar",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "frost-dash",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Frost Dash",
+      "description": "Frost-cloaked dash — 250% Ice, +20 Poise Dmg, +150% Kickback.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Jackknife",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "frost-strike",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Frost Strike",
+      "description": "Ice-infused single hit — 50% Ice, +20 Poise Dmg, +100% Kickback.",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Jade-Spined Axe",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "ice-throw",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Ice Throw",
+      "description": "Hurl ice-coated weapon and return — 25% Ice x2, Breaks Block.",
+      "cost": "50 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Risen Blade",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "ice-whirl",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Ice Whirl",
+      "description": "Six-hit icy whirlwind — Breaks Block each hit.",
+      "cost": "150 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Sacrament's Sin",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "lightning-dash",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Lightning Dash",
+      "description": "Lightning-crackling dash — 300% Lightning, Knocks Down.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "lightning-flurry",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Lightning Flurry",
+      "description": "Four rapid lightning strikes (+20 Poise Dmg, +100% Kickback each).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Buried Shamsir",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "lightning-slam",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Lightning Slam",
+      "description": "Leap + electrical slam — 300% Lightning, +20 Poise Dmg.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "lightning-spin",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Lightning Spin",
+      "description": "Two spinning lightning strikes — 125% More x2, Breaks Block.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Filleter",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "lightning-throw",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Lightning Throw",
+      "description": "Hurl electrified weapon and return — 25% Lightning x2.",
+      "cost": "50 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Demon's Key",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "lightning-whirl",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Lightning Whirl",
+      "description": "Six-hit electric whirlwind — Breaks Block each hit.",
+      "cost": "150 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "shock-strike",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Shock Strike",
+      "description": "Electrified hit then jump back — 50% Lightning x2, +20 Poise Dmg.",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Reaching Nail",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "stormpiercer",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Stormpiercer",
+      "description": "Lunge strike + 2 homing lightning projectiles (200% More each).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Scorched Broadblade",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "plague-dash",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Plague Dash",
+      "description": "Plague-coated dash — 300% Plague, +150% Kickback.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "plague-strike",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Plague Strike",
+      "description": "Heavy plague hit — 300% More, Knocks Down, Breaks Block.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "Extracted from Ogre's Club",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "plague-swirl",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Plague Swirl",
+      "description": "Two sweeping plague strikes — Breaks Block, +200% Kickback.",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "plague-throw",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Plague Throw",
+      "description": "Fling plague-coated weapon and return — 25% Plague x2.",
+      "cost": "50 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "plague-whirl",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Plague Whirl",
+      "description": "Six-hit toxic whirlwind — Breaks Block each hit.",
+      "cost": "150 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "One-Handed Weapons",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "balance-smash",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Balance Smash",
+      "description": "Roll over weapon + ground-shattering smash — 200% Physical, Breaks Block.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Weeping Earth",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "berserk-flurry",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Berserk Flurry",
+      "description": "Four rapid block-breaking swings with berserker fury (+10 Poise Dmg, +100% Kickback).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "berserk-slam",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Berserk Slam",
+      "description": "Battle cry + forward ground slam — 100% Physical, Breaks Block.",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Tooth of the Ancient One",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "berserk-strike",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Berserk Strike",
+      "description": "Chest thump rage boost + devastating hit — 250% Physical, Knocks Down, Breaks Block.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Bud of the Everlasting Tree",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "breaker-thrust",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Breaker Thrust",
+      "description": "Lunge + weapon drive — 100% Physical, Knocks Down, +200% Kickback.",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Harvester's Dread",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "crushing-quad",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Crushing Quad",
+      "description": "Four rapid block-breaking swings (10% More each, +10 Poise Dmg).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "crushing-slam",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Crushing Slam",
+      "description": "Leap forward + ground crush — 200% Physical, Knocks Down, Breaks Block.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Brutish Cudgel",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "crushing-triple",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Crushing Triple",
+      "description": "Three-hit combo, each hit heavier — Breaks Block (+10 Poise Dmg, +100% Kickback).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Broken Fang",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "crushing-uppercut",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Crushing Uppercut",
+      "description": "Whirling momentum into devastating block-breaking upswing — 100% x2.",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "cyclone-swipe",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Cyclone Swipe",
+      "description": "Single circular sweep — 100% Physical, +10 Poise Dmg, +200% Kickback.",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Sunbeam",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "dodge-slamdown",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Dodge Slamdown",
+      "description": "Bounce forward + block-breaking overhead slam — 100% Physical, +200% Kickback.",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted frin Bandit's Cleaver",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "double-crush",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Double Crush",
+      "description": "Bounce forward + two block-breaking strikes (50% More each, +200% Kickback).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Spliced Hammer",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "frenzied-cleave",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Frenzied Cleave",
+      "description": "Three wild block-breaking swings (100% More each, +10 Poise Dmg).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Soul Thresher",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "ground-slam",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Ground Slam",
+      "description": "Horizontal block-breaking sweep + aerial downward slam (3 hits total).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Festering Earth",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "juggle-strike",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Juggle Strike",
+      "description": "Charged block-breaking swinging uppercut — 200% Physical, +100% Kickback.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Claymore",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "kick-slash",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Kick Slash",
+      "description": "Spinning kick + block-breaking slash — 100% Physical x2.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "knockdown-swirl",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Knockdown Swirl",
+      "description": "Two-hit spinning combo — Knocks Down, Breaks Block.",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Divine Scimitar",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "limit-break",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Limit Break",
+      "description": "Four-hit slashing combo ending with overwhelming block-breaking blow (-20% More each).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Gnarled Saw",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "multi-spin",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Multi Spin",
+      "description": "Six slow spins continuously hitting all nearby enemies (-30% More each).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Serrated Cutter",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "pole-flurry",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Pole Flurry",
+      "description": "Two vertical sweeps + downward slam (50% More each, +150% Kickback).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "raging-spiral",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Raging Spiral",
+      "description": "Spin forward 3 times in block-breaking arc (50% More, x4 hits).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Midnight Shredder",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "reap",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Reap",
+      "description": "Two block-breaking spinning blows + crushing slam finish.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Scythe of Wretches",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "relentless-cleave",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Relentless Cleave",
+      "description": "Four block-breaking swings + final fiery explosion.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Boarskin Reaper",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "rip-and-tear",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Rip and Tear",
+      "description": "Single massive block-breaking strike — 300% Physical, Knocks Down, +200% Kickback.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Hope Shorn",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "seismic-crush",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Seismic Crush",
+      "description": "Ground slam shockwave — Knocks Down, Breaks Block.",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Evening Star",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "slashing-spin",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Slashing Spin",
+      "description": "Charged spinning strike — 250% Physical, Knocks Down, Breaks Block, +200% Kickback.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Freiheit",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "spin-crush",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Spin Crush",
+      "description": "Horizontal sweep + crushing downward strike (75% More x2, Breaks Block).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Regal Cleft",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "spiral-crash",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Spiral Crash",
+      "description": "Crushing spin + knockdown blow — 100% Physical, Knocks Down.",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Cerim's Skyrend",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "tremor-slam",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Tremor Slam",
+      "description": "Ground slam + shockwave — 100% Physical x2, +200% Kickback.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Mayhem",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "wallbreaker",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Wallbreaker",
+      "description": "Single block-shattering stab — 250% Physical, +10 Poise Dmg, Breaks Block.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Summer's Sting",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "whirlwind",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Whirlwind",
+      "description": "Five rapid block-breaking spins hitting all nearby enemies (+200% Kickback each).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Shattered Sun",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "eruption",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Eruption",
+      "description": "Leap + volcanic explosion — 400% Fire, Knocks Down, Breaks Block.",
+      "cost": "150 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Festering Cleft",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "fire-slam",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Fire Slam",
+      "description": "Leap + fiery blast — 100% Fire x2, Knocks Down, Breaks Block.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Pound of Cadavers",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "fire-swipe",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Fire Swipe",
+      "description": "Sweeping flame strike — 70% Fire, +10 Poise Dmg, +200% Kickback.",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Blister",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "fire-whirlwind",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Fire Whirlwind",
+      "description": "Six spinning fire hits (-30% More each) — Breaks Block.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "ice-ram",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Ice Ram",
+      "description": "Sweeping frost strike — 70% Ice, +10 Poise Dmg, +200% Kickback.",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "lightning-assault",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Lightning Assault",
+      "description": "Gap-closing sweeping lightning strike — 200% Lightning, Knocks Down, +200% Kickback.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Gilded Twibill",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "pestilent-recoil",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Pestilent Recoil",
+      "description": "Two plague melee hits + leaps back and fires toxic knockdown wave (4 hits total).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Sieger",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "plague-crush",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Plague Crush",
+      "description": "Sweeping plague strike — 70% Plague, +10 Poise Dmg, +200% Kickback.",
+      "cost": "50 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Two-Handed Weapons",
+      "whereToFind": "Extracted from Spalled Axe",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "armageddon-fire",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Armageddon (Fire)",
+      "description": "Calls down a massive firestorm — 1000% Fire.",
+      "cost": "150 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Molten Clutch",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "armageddon-physical",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Armageddon (Physical)",
+      "description": "Close-range devastating block-breaking strike — 400% Physical.",
+      "cost": "150 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "converging-flame",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Converging Flame",
+      "description": "6 hovering fireballs converge on enemies; Charge 2: 150% More.",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Flame Becomes Us",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "fire-blast",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Fire Blast",
+      "description": "Small intense fire explosion — 300% Fire, +150% Kickback.",
+      "cost": "50 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Entwined Root",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "fire-burst",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Fire Burst",
+      "description": "Delayed fire projectile detonates — 900% Fire, 3m explosion radius.",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Flame Becomes Us",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "fire-dart",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Fire Dart",
+      "description": "Focused flame dart — 30% Fire, -50% Poise Dmg, +50% Kickback.",
+      "cost": "35 Stamina",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Entwined Root",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "fire-nova",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Fire Nova",
+      "description": "Fire burst around you — 300% Fire, Knocks Down; Charge doubles power.",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Gnarled Staff",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "fire-walk",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Fire Walk",
+      "description": "Engulfs self in flames; leaves burning trail (+20% Burn Buildup, +20% Fire Dmg).",
+      "cost": "150 Focus",
+      "attackType": "Self",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Fused Coronet",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "magic"
+    },
+    {
+      "slug": "fire-wall",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Fire Wall",
+      "description": "Erects a wall of continuous fire — 50% Fire x10.",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Molten Clutch",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "fire-wave",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Fire Wave",
+      "description": "Five homing fireballs in a wave; Charge 2: 150% More.",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Stag of Embers",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "fireball",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Fireball",
+      "description": "Blazing fireball; Charge 2: 100% More with full kickback.",
+      "cost": "35 Stamina",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Gnarled Staff",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "flame-sweep",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Flame Sweep",
+      "description": "360-degree flaming staff sweep — 200% Fire, +10 Poise Dmg, Breaks Block.",
+      "cost": "25 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Dried Hive",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "hellfire",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Hellfire",
+      "description": "Leap + large fiery eruption — 1000% Fire, Knocks Down.",
+      "cost": "150 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Stag of Embers",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "inferno",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Inferno",
+      "description": "Sustained fire beam — 6 hits at -50% More until released.",
+      "cost": "15 Focus/tick",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Dried Hive",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "spin-strike",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Spin Strike",
+      "description": "Four-hit fiery whirlwind in all directions (100% Fire each).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Fused Coronet",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "cold-sling",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Cold Sling",
+      "description": "Leap + 3 homing ice projectiles (160% More each, +20 Poise Dmg).",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Hoar Frost Sickle",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "frigid-arc",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Frigid Arc",
+      "description": "Leap + sweeping frost arc — 80% Ice x2.",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from All Is Known",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "frost-needles",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Frost Needles",
+      "description": "Four homing ice shards — 100% Ice each, +20 Poise Dmg.",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from All Is Known",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "frost-nova",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Frost Nova",
+      "description": "Icy burst around you — 300% Ice; Charge doubles power.",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Spherin",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "frost-step",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Frost Step",
+      "description": "Dodge then counter frost stream — 6 hits at -30% More.",
+      "cost": "50 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Moon Shard",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "frost-stream",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Frost Stream",
+      "description": "Sustained frost beam — 6 hits at -50% More until released.",
+      "cost": "15 Focus/tick",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Endless Winter",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "glacial-spike",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Glacial Spike",
+      "description": "Leap + massive freezing eruption — 1000% Ice, Knocks Down.",
+      "cost": "150 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "hail",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Hail",
+      "description": "Five ice bolts in a wave; Charge 2: 150% More.",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "homing-frost",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Homing Frost",
+      "description": "10 icy homing darts; Charge 2: 30% More.",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Endless Winter",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "ice-dart",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Ice Dart",
+      "description": "Chilling ice dart — 30% Ice, slows on impact.",
+      "cost": "35 Stamina",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Hoar Frost Sickle",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "ice-sweep",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Ice Sweep",
+      "description": "360-degree ice-encased staff sweep — 200% Ice, +10 Poise Dmg, Breaks Block.",
+      "cost": "25 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "icebolt",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Icebolt",
+      "description": "Chilling ice ball; Charge 2: 100% More.",
+      "cost": "35 Stamina",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Spherin",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "chain-lightning",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Chain Lightning",
+      "description": "Lightning bolt that arcs to 3 nearby enemies when charged (200% multiplier).",
+      "cost": "35 Stamina",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Cursed Crone",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "charged-bolt",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Charged Bolt",
+      "description": "Releases 18 lightning bolts in all directions — 250% Lightning each.",
+      "cost": "50 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "lightning-barrage",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Lightning Barrage",
+      "description": "Dash into enemies + electrified strike flurry — 170% Lightning, +150% Kickback.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Crooked Key",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "lightning-blast",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Lightning Blast",
+      "description": "Electrifies ground beneath enemies — 300% Lightning.",
+      "cost": "50 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Grasping Magus Wand",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "lightning-bolt",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Lightning Bolt",
+      "description": "Single massive lightning strike from the sky — 1300% Lightning, +200% Kickback.",
+      "cost": "150 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "lightning-dart",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Lightning Dart",
+      "description": "Crackling lightning dart — 30% Lightning.",
+      "cost": "35 Stamina",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Grasping Magus Wand",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "lightning-flash",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Lightning Flash",
+      "description": "Three concentrated homing lightning bolts (200% More each).",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Crooked Key",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "lightning-leap",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Lightning Leap",
+      "description": "Leap + multi-hit lightning plunge; 3m radius shockwave.",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Amberhusk",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "lightning-storm",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Lightning Storm",
+      "description": "Five homing lightning bolts in succession (100% More each).",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Amberhusk",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "lightning-sweep",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Lightning Sweep",
+      "description": "360-degree electric staff sweep — 200% Lightning, +10 Poise Dmg, Breaks Block.",
+      "cost": "25 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Cursed Crone",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "shock-nova",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Shock Nova",
+      "description": "Electric burst around you — 300% Lightning, Knocks Down; Charge doubles power.",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Sinner's Crown",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "spark",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Spark",
+      "description": "Five lightning bolts in a wave; Charge 2: 150% More.",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Sinner's Crown",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "static",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Static",
+      "description": "Body charge shocks nearby enemies; 3 instances when charged (+50% Shock Buildup).",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "thunderstrike",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Thunderstrike",
+      "description": "Leap + thunderous eruption — 1000% Lightning, Knocks Down.",
+      "cost": "150 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Sinner's Crown",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "pestilence",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Pestilence",
+      "description": "Leap + massive toxic eruption — 1000% Plague, Knocks Down.",
+      "cost": "150 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "plague-barrage",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Plague Barrage",
+      "description": "Charge forward + 5 homing plague projectiles (100% More each).",
+      "cost": "100 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Rune-Stricken Wand",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "plague-breath",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Plague Breath",
+      "description": "Toxic plague ball; Charge 2: 100% More.",
+      "cost": "35 Stamina",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Pinwheel Staff",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "plague-burst",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Plague Burst",
+      "description": "Four homing plague projectiles — 130% More each.",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Sanglier",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "plague-column",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Plague Column",
+      "description": "Vertical plague torrent that fires infectious projectiles outward.",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Nith Gate",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "plague-dart",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Plague Dart",
+      "description": "Diseased dart — 30% Plague, slow-acting lingering poison.",
+      "cost": "35 Stamina",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Lord of the Muck",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "plague-explosion",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Plague Explosion",
+      "description": "Detonates plague buboes — 170% Plague.",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Rune-Stricken Wand",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "plague-launch",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Plague Launch",
+      "description": "Leap back + plague shockwave — 650% Plague, Knocks Down, +200% Kickback.",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Sanglier",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "plague-nova",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Plague Nova",
+      "description": "Plague burst around you — 300% Plague, Knocks Down; Charge doubles power.",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Pinwheel Staff",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "plague-smite",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Plague Smite",
+      "description": "Erupts pestilence beneath enemies' feet — 300% Plague.",
+      "cost": "50 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Lord of the Muck",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "plague-splatter",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Plague Splatter",
+      "description": "Massive plague bubble bursts in spreading corruption — 1000% Plague.",
+      "cost": "150 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from Nith Gate",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "plague-sweep",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Plague Sweep",
+      "description": "360-degree toxin-laced staff sweep — 200% Plague, +10 Poise Dmg, Breaks Block.",
+      "cost": "25 Focus",
+      "attackType": "Melee",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from False Truth",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "melee"
+    },
+    {
+      "slug": "plague-wave",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Plague Wave",
+      "description": "Five plague projectiles in a wave; Charge 2: 150% More.",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "Extracted from False Truth",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "rotwheel",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Rotwheel",
+      "description": "Rolling plague mass that barrels forward — 200% Plague + 100% trail.",
+      "cost": "100 Focus",
+      "attackType": "Ranged",
+      "compatibleWeaponType": "Wands & Staves",
+      "whereToFind": "TBC",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "ranged"
+    },
+    {
+      "slug": "blink",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Blink",
+      "description": "Teleport 4m forward, passing through enemies.",
+      "cost": "25 Focus",
+      "attackType": "Utility",
+      "compatibleWeaponType": "来源未标注",
+      "whereToFind": "Eleanor",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "unknown"
+    },
+    {
+      "slug": "channel",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Channel",
+      "description": "Sacrifice health to restore +2 Focus.",
+      "cost": "30 Health/tick",
+      "attackType": "Utility",
+      "compatibleWeaponType": "来源未标注",
+      "whereToFind": "Eleanor",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "utility"
+    },
+    {
+      "slug": "damage-surge",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Damage Surge",
+      "description": "+20% Overall Damage Dealt for 120 seconds.",
+      "cost": "100 Focus",
+      "attackType": "Utility",
+      "compatibleWeaponType": "来源未标注",
+      "whereToFind": "Eleanor",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "unknown"
+    },
+    {
+      "slug": "focus-halo",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Focus Halo",
+      "description": "+100 Max Focus for 120 seconds.",
+      "cost": "100 Focus",
+      "attackType": "Utility",
+      "compatibleWeaponType": "来源未标注",
+      "whereToFind": "Eleanor",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "utility"
+    },
+    {
+      "slug": "heal",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Heal",
+      "description": "Instantly restore +40 Health.",
+      "cost": "50 Focus",
+      "attackType": "Utility",
+      "compatibleWeaponType": "来源未标注",
+      "whereToFind": "Eleanor",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "utility"
+    },
+    {
+      "slug": "heal-aura",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Heal Aura",
+      "description": "Sustained healing aura — +2 Health per tick.",
+      "cost": "20 Focus/tick",
+      "attackType": "Utility",
+      "compatibleWeaponType": "来源未标注",
+      "whereToFind": "Eleanor",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "utility"
+    },
+    {
+      "slug": "illuminate",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Illuminate",
+      "description": "Summons a light source that follows you.",
+      "cost": "25 Focus",
+      "attackType": "Utility",
+      "compatibleWeaponType": "来源未标注",
+      "whereToFind": "Eleanor",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "unknown"
+    },
+    {
+      "slug": "poise-shield",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Poise Shield",
+      "description": "+200% Poise for 120 seconds (much harder to stagger).",
+      "cost": "100 Focus",
+      "attackType": "Utility",
+      "compatibleWeaponType": "来源未标注",
+      "whereToFind": "Eleanor",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "unknown"
+    },
+    {
+      "slug": "pulse-of-health",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Pulse of Health",
+      "description": "+25 Current Health and +20% Max Health for 120 seconds.",
+      "cost": "100 Focus",
+      "attackType": "Utility",
+      "compatibleWeaponType": "来源未标注",
+      "whereToFind": "Eleanor",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "utility"
+    },
+    {
+      "slug": "repair",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Repair",
+      "description": "Restore +25 Durability to equipped items.",
+      "cost": "150 Focus",
+      "attackType": "Utility",
+      "compatibleWeaponType": "来源未标注",
+      "whereToFind": "Eleanor",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "unknown"
+    },
+    {
+      "slug": "return",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Return",
+      "description": "Fast travel to any unlocked whisper point.",
+      "cost": "25 Focus",
+      "attackType": "Utility",
+      "compatibleWeaponType": "来源未标注",
+      "whereToFind": "Eleanor",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "unknown"
+    },
+    {
+      "slug": "scream",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Scream",
+      "description": "Powerful scream — Knocks Down all enemies in front of you.",
+      "cost": "50 Focus",
+      "attackType": "Utility",
+      "compatibleWeaponType": "来源未标注",
+      "whereToFind": "Eleanor",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "unknown"
+    },
+    {
+      "slug": "stamina-wellspring",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Stamina Wellspring",
+      "description": "+30% Stamina for 120 seconds.",
+      "cost": "100 Focus",
+      "attackType": "Utility",
+      "compatibleWeaponType": "来源未标注",
+      "whereToFind": "Purchased from Eleanor Extracted from Paddle",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "unknown"
+    },
+    {
+      "slug": "heat-enchantment",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Heat Enchantment",
+      "description": "Gain Fire Infusion for 60 seconds.",
+      "cost": "50 Focus",
+      "attackType": "Utility",
+      "compatibleWeaponType": "来源未标注",
+      "whereToFind": "Purchased from Eleanor Extracted from Azure Blade",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "magic"
+    },
+    {
+      "slug": "heat-resistance",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Heat Resistance",
+      "description": "+25% Fire Resistance for 120 seconds.",
+      "cost": "50 Focus",
+      "attackType": "Utility",
+      "compatibleWeaponType": "来源未标注",
+      "whereToFind": "Eleanor",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "magic"
+    },
+    {
+      "slug": "cold-enchantment",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Cold Enchantment",
+      "description": "Gain Ice Infusion for 60 seconds.",
+      "cost": "50 Focus",
+      "attackType": "Utility",
+      "compatibleWeaponType": "来源未标注",
+      "whereToFind": "Purchased from Eleanor Extracted from Icebreaker",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "unknown"
+    },
+    {
+      "slug": "cold-resistance",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Cold Resistance",
+      "description": "+25% Ice Resistance for 120 seconds.",
+      "cost": "50 Focus",
+      "attackType": "Utility",
+      "compatibleWeaponType": "来源未标注",
+      "whereToFind": "Eleanor",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "unknown"
+    },
+    {
+      "slug": "electric-enchantment",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Electric Enchantment",
+      "description": "Gain Lightning Infusion for 60 seconds.",
+      "cost": "50 Focus",
+      "attackType": "Utility",
+      "compatibleWeaponType": "来源未标注",
+      "whereToFind": "Purchased from Eleanor Extracted from Cronus",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "unknown"
+    },
+    {
+      "slug": "electric-resistance",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Electric Resistance",
+      "description": "+25% Lightning Resistance for 120 seconds.",
+      "cost": "50 Focus",
+      "attackType": "Utility",
+      "compatibleWeaponType": "来源未标注",
+      "whereToFind": "Eleanor",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "unknown"
+    },
+    {
+      "slug": "plague-enchantment",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Plague Enchantment",
+      "description": "Gain Plague Infusion for 60 seconds.",
+      "cost": "50 Focus",
+      "attackType": "Utility",
+      "compatibleWeaponType": "来源未标注",
+      "whereToFind": "Purchased from Eleanor Extracted from Shroudcleaver",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "magic"
+    },
+    {
+      "slug": "plague-resistance",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Plague Resistance",
+      "description": "+25% Plague Resistance for 120 seconds.",
+      "cost": "50 Focus",
+      "attackType": "Utility",
+      "compatibleWeaponType": "来源未标注",
+      "whereToFind": "Eleanor",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "magic"
+    },
+    {
+      "slug": "thorns",
+      "gameId": "no-rest-for-the-wicked",
+      "name": "Thorns",
+      "description": "Reflect 80% of incoming damage back at attackers for 120 seconds.",
+      "cost": "50 Focus",
+      "attackType": "Utility",
+      "compatibleWeaponType": "来源未标注",
+      "whereToFind": "Eleanor",
+      "sourceUrl": "https://norestforthewicked.wiki.fextralife.com/Runes",
+      "lastVerifiedAt": "2026-07-09",
+      "category": "unknown"
+    }
+  ]
+}

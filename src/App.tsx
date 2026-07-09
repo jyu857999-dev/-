@@ -17,13 +17,33 @@ import {
 import { guides } from './lib/content'
 import { filterGuides, uniqueValues } from './lib/search'
 import {
+  bossCategoryLabels,
+  filterBosses,
+  filterRunes,
+  findBoss,
+  findRune,
+  getBossesForGame,
+  getRunesForGame,
+  groupBosses,
+  groupRunes,
+  runeCategoryLabels,
+} from './lib/bossRuneCatalog'
+import {
   filterWeapons,
   findWeapon,
   getWeaponsForGame,
   groupWeaponsByCategory,
   weaponCategoryLabels,
 } from './lib/weaponCatalog'
-import type { GuideEntry, GuideFilters, WeaponCategory, WeaponEntry } from './types'
+import type {
+  BossCategory,
+  BossEntry,
+  GuideEntry,
+  GuideFilters,
+  RuneEntry,
+  WeaponCategory,
+  WeaponEntry,
+} from './types'
 import './App.css'
 
 const defaultGameId = games[0]?.id ?? ''
@@ -41,6 +61,10 @@ function App() {
       <Route path="/games/:gameId" element={<GuideLibrary />} />
       <Route path="/games/:gameId/weapons" element={<WeaponCatalog />} />
       <Route path="/games/:gameId/weapons/:weaponSlug" element={<WeaponDetail />} />
+      <Route path="/games/:gameId/bosses" element={<BossCatalog />} />
+      <Route path="/games/:gameId/bosses/:bossSlug" element={<BossDetail />} />
+      <Route path="/games/:gameId/runes" element={<RuneCatalog />} />
+      <Route path="/games/:gameId/runes/:runeSlug" element={<RuneDetail />} />
       <Route path="/games/:gameId/guides/:guideSlug" element={<GuideDetail />} />
       <Route path="*" element={<NotFound title="页面不存在" />} />
     </Routes>
@@ -127,15 +151,23 @@ function GuideLibrary() {
 
       <section className="feature-strip">
         <div>
-          <p className="eyebrow">装备资料升级</p>
-          <h2>完整武器图鉴</h2>
+          <p className="eyebrow">图鉴资料升级</p>
+          <h2>武器、Boss、符文图鉴</h2>
           <p>
-            已从 Fextralife Weapons 总页整理 21 类、193 把武器，按斧、弓、匕首、武士刀、法杖等细分展示。
+            已整理 193 把武器、8 个 Boss 和 222 条符文；Boss 详情包含招式与打法，符文保留表格字段。
           </p>
         </div>
-        <Link className="primary-link solid" to={`/games/${game.id}/weapons`}>
-          打开武器图鉴
-        </Link>
+        <div className="feature-actions">
+          <Link className="primary-link solid" to={`/games/${game.id}/weapons`}>
+            武器
+          </Link>
+          <Link className="primary-link solid" to={`/games/${game.id}/bosses`}>
+            Boss
+          </Link>
+          <Link className="primary-link solid" to={`/games/${game.id}/runes`}>
+            符文
+          </Link>
+        </div>
       </section>
 
       <section className="library-layout" aria-label="攻略列表">
@@ -596,6 +628,352 @@ function WeaponDetail() {
   )
 }
 
+function BossCatalog() {
+  const { gameId = defaultGameId } = useParams()
+  const game = games.find((item) => item.id === gameId)
+  const [query, setQuery] = useState('')
+  const [category, setCategory] = useState<BossCategory | 'all'>('all')
+  const [bossType, setBossType] = useState('all')
+
+  if (!game) return <NotFound title="未找到这个游戏" />
+
+  const gameBosses = getBossesForGame(game.id)
+  const bossTypes = Array.from(new Set(gameBosses.map((boss) => boss.bossType))).sort(
+    (a, b) => a.localeCompare(b, 'zh-Hans-CN'),
+  )
+  const filtered = filterBosses(gameBosses, query, category, bossType)
+  const groups = groupBosses(filtered)
+
+  return (
+    <main className="app-shell weapon-shell">
+      <Header gameId={game.id} />
+      <Link className="back-link" to={`/games/${game.id}`}>
+        返回攻略库首页
+      </Link>
+      <CatalogHero
+        eyebrow="Boss Catalog"
+        title="Boss 图鉴"
+        body="按主线、支线和 Boss 类型整理；点进详情可看位置、奖励、招式与打法。"
+        stats={[
+          ['Boss 总数', String(gameBosses.length)],
+          ['类型', String(bossTypes.length)],
+        ]}
+      />
+      <section className="weapon-tools" aria-label="Boss 筛选">
+        <SearchInput value={query} onChange={setQuery} placeholder="搜索 Boss、地点、奖励、招式..." />
+        <SelectField
+          label="Boss 分类"
+          value={category}
+          onChange={(value) => setCategory(value as BossCategory | 'all')}
+          options={[
+            ['all', '全部 Boss'],
+            ...Object.entries(bossCategoryLabels),
+          ]}
+        />
+        <SelectField
+          label="Boss 类型"
+          value={bossType}
+          onChange={setBossType}
+          options={[
+            ['all', '全部类型'],
+            ...bossTypes.map((item) => [item, item] as const),
+          ]}
+        />
+      </section>
+
+      <div className="weapon-sections">
+        {groups.map(([groupCategory, items]) => (
+          <section key={groupCategory} className="weapon-section">
+            <div className="weapon-section-heading">
+              <h3>{bossCategoryLabels[groupCategory]}</h3>
+              <span>{items.length} 个</span>
+            </div>
+            <div className="weapon-grid boss-grid">
+              {items.map((boss) => (
+                <BossCard key={boss.slug} boss={boss} />
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+      {filtered.length === 0 && <EmptyState title="没有匹配 Boss" body="换关键词或重置筛选。" />}
+    </main>
+  )
+}
+
+function BossDetail() {
+  const { gameId = '', bossSlug = '' } = useParams()
+  const game = games.find((item) => item.id === gameId)
+  const boss = findBoss(gameId, bossSlug)
+  if (!game) return <NotFound title="未找到这个游戏" />
+  if (!boss) return <NotFound title="未找到这个 Boss" />
+
+  return (
+    <main className="app-shell weapon-shell">
+      <Header gameId={game.id} />
+      <Link className="back-link" to={`/games/${game.id}/bosses`}>
+        返回 Boss 图鉴
+      </Link>
+      <article className="weapon-detail">
+        <section className="weapon-detail-main">
+          <p className="eyebrow">{boss.categoryLabelZh}</p>
+          <h1>{boss.name}</h1>
+          <p>{boss.summary}</p>
+          <InfoSection title="战前准备" values={boss.preparation} />
+          <InfoSection title="打法流程" values={boss.strategy} />
+          <section className="info-section">
+            <h2>招式与应对</h2>
+            <div className="data-table-wrap">
+              <table className="data-table">
+                <thead>
+                  <tr>
+                    <th>招式</th>
+                    <th>应对</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {boss.attacks.map((attack) => (
+                    <tr key={attack.name}>
+                      <td>{attack.name}</td>
+                      <td>{attack.counter}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+          {boss.notes.length > 0 && <InfoSection title="备注" values={boss.notes} />}
+        </section>
+        <aside className="weapon-infobox" aria-label="Boss 资料卡">
+          {boss.imageUrl ? (
+            <img src={boss.imageUrl} alt={`${boss.name} 图片`} />
+          ) : (
+            <div className="missing-image">待补图</div>
+          )}
+          <h2>{boss.name}</h2>
+          <dl>
+            <Meta label="分类" values={[boss.categoryLabelZh]} />
+            <Meta label="类型" values={[boss.bossType]} />
+            <Meta label="可选" values={[boss.optional]} />
+            <Meta label="位置" values={boss.location} />
+            <Meta label="相关任务" values={boss.quest} />
+            <Meta label="弱点" values={boss.weakness} />
+            <Meta label="强抗" values={boss.strongAgainst} />
+            <Meta label="抗性" values={boss.resistantTo} />
+            <Meta label="免疫" values={boss.immuneTo} />
+            <Meta label="奖励" values={boss.rewards} />
+            <Meta label="复核日期" values={[boss.lastVerifiedAt]} />
+          </dl>
+          <a href={boss.sourceUrl} target="_blank" rel="noreferrer">
+            查看来源页
+          </a>
+        </aside>
+      </article>
+    </main>
+  )
+}
+
+function RuneCatalog() {
+  const { gameId = defaultGameId } = useParams()
+  const game = games.find((item) => item.id === gameId)
+  const [query, setQuery] = useState('')
+  const [category, setCategory] = useState<RuneEntry['category'] | 'all'>('all')
+  const [attackType, setAttackType] = useState('all')
+
+  if (!game) return <NotFound title="未找到这个游戏" />
+
+  const gameRunes = getRunesForGame(game.id)
+  const attackTypes = Array.from(new Set(gameRunes.map((rune) => rune.attackType))).sort(
+    (a, b) => a.localeCompare(b, 'zh-Hans-CN'),
+  )
+  const filtered = filterRunes(gameRunes, query, category, attackType)
+  const groups = groupRunes(filtered)
+
+  return (
+    <main className="app-shell weapon-shell">
+      <Header gameId={game.id} />
+      <Link className="back-link" to={`/games/${game.id}`}>
+        返回攻略库首页
+      </Link>
+      <CatalogHero
+        eyebrow="Runes Catalog"
+        title="符文图鉴"
+        body="保留来源表格的描述、成本、攻击类型、兼容武器和获取方式，支持筛选与详情查看。"
+        stats={[
+          ['符文总数', String(gameRunes.length)],
+          ['攻击类型', String(attackTypes.length)],
+        ]}
+      />
+      <section className="weapon-tools" aria-label="符文筛选">
+        <SearchInput value={query} onChange={setQuery} placeholder="搜索符文、描述、获取方式、武器类型..." />
+        <SelectField
+          label="用途分类"
+          value={category}
+          onChange={(value) => setCategory(value as RuneEntry['category'] | 'all')}
+          options={[
+            ['all', '全部用途'],
+            ...Object.entries(runeCategoryLabels),
+          ]}
+        />
+        <SelectField
+          label="攻击类型"
+          value={attackType}
+          onChange={setAttackType}
+          options={[
+            ['all', '全部攻击类型'],
+            ...attackTypes.map((item) => [item, item] as const),
+          ]}
+        />
+      </section>
+      <div className="weapon-sections">
+        {groups.map(([groupCategory, items]) => (
+          <section key={groupCategory} className="weapon-section">
+            <div className="weapon-section-heading">
+              <h3>{runeCategoryLabels[groupCategory]}</h3>
+              <span>{items.length} 条</span>
+            </div>
+            <div className="data-table-wrap">
+              <table className="data-table">
+                <thead>
+                  <tr>
+                    <th>符文</th>
+                    <th>描述</th>
+                    <th>成本</th>
+                    <th>类型</th>
+                    <th>兼容武器</th>
+                    <th>获取方式</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {items.map((rune) => (
+                    <tr key={rune.slug}>
+                      <td>
+                        <Link to={`/games/${rune.gameId}/runes/${rune.slug}`}>{rune.name}</Link>
+                      </td>
+                      <td>{rune.description}</td>
+                      <td>{rune.cost}</td>
+                      <td>{rune.attackType}</td>
+                      <td>{rune.compatibleWeaponType}</td>
+                      <td>{rune.whereToFind}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        ))}
+      </div>
+      {filtered.length === 0 && <EmptyState title="没有匹配符文" body="换关键词或重置筛选。" />}
+    </main>
+  )
+}
+
+function RuneDetail() {
+  const { gameId = '', runeSlug = '' } = useParams()
+  const game = games.find((item) => item.id === gameId)
+  const rune = findRune(gameId, runeSlug)
+  if (!game) return <NotFound title="未找到这个游戏" />
+  if (!rune) return <NotFound title="未找到这个符文" />
+
+  return (
+    <main className="app-shell weapon-shell">
+      <Header gameId={game.id} />
+      <Link className="back-link" to={`/games/${game.id}/runes`}>
+        返回符文图鉴
+      </Link>
+      <article className="weapon-detail">
+        <section className="weapon-detail-main">
+          <p className="eyebrow">{runeCategoryLabels[rune.category]}</p>
+          <h1>{rune.name}</h1>
+          <p>{rune.description}</p>
+          <InfoSection
+            title="使用判断"
+            values={[
+              `成本：${rune.cost}`,
+              `攻击类型：${rune.attackType}`,
+              `兼容武器：${rune.compatibleWeaponType}`,
+              `获取方式：${rune.whereToFind}`,
+            ]}
+          />
+          <InfoSection
+            title="备注"
+            values={[
+              '符文数据来自 Fextralife Runes 表格；数值、成本和兼容武器保留来源字段，避免遗漏。',
+              '实际 Build 适配需要结合武器动作、 Focus/Stamina 消耗和当前词条复核。',
+            ]}
+          />
+        </section>
+        <aside className="weapon-infobox" aria-label="符文资料卡">
+          <div className="rune-mark">{rune.name.slice(0, 1)}</div>
+          <h2>{rune.name}</h2>
+          <dl>
+            <Meta label="用途" values={[runeCategoryLabels[rune.category]]} />
+            <Meta label="成本" values={[rune.cost]} />
+            <Meta label="攻击类型" values={[rune.attackType]} />
+            <Meta label="兼容武器" values={[rune.compatibleWeaponType]} />
+            <Meta label="获取方式" values={[rune.whereToFind]} />
+            <Meta label="复核日期" values={[rune.lastVerifiedAt]} />
+          </dl>
+          <a href={rune.sourceUrl} target="_blank" rel="noreferrer">
+            查看来源页
+          </a>
+        </aside>
+      </article>
+    </main>
+  )
+}
+
+function CatalogHero({
+  eyebrow,
+  title,
+  body,
+  stats,
+}: {
+  eyebrow: string
+  title: string
+  body: string
+  stats: [string, string][]
+}) {
+  return (
+    <section className="weapon-hero">
+      <div>
+        <p className="eyebrow">{eyebrow}</p>
+        <h1>{title}</h1>
+        <p>{body}</p>
+      </div>
+      <dl className="weapon-stats">
+        {stats.map(([label, value]) => (
+          <div key={label}>
+            <dt>{label}</dt>
+            <dd>{value}</dd>
+          </div>
+        ))}
+      </dl>
+    </section>
+  )
+}
+
+function SearchInput({
+  value,
+  onChange,
+  placeholder,
+}: {
+  value: string
+  onChange: (value: string) => void
+  placeholder: string
+}) {
+  return (
+    <label className="field">
+      <span>搜索</span>
+      <input
+        value={value}
+        onChange={(event) => onChange(event.target.value)}
+        placeholder={placeholder}
+      />
+    </label>
+  )
+}
+
 function WeaponCard({
   weapon,
   compact = false,
@@ -615,6 +993,22 @@ function WeaponCard({
           {weapon.categoryLabelZh} · {weapon.handedness}
         </span>
       )}
+    </Link>
+  )
+}
+
+function BossCard({ boss }: { boss: BossEntry }) {
+  return (
+    <Link className="weapon-card boss-card" to={`/games/${boss.gameId}/bosses/${boss.slug}`}>
+      {boss.imageUrl ? (
+        <img src={boss.imageUrl} alt={`${boss.name} 图片`} />
+      ) : (
+        <div className="missing-image small">待补图</div>
+      )}
+      <strong>{boss.name}</strong>
+      <span>
+        {boss.categoryLabelZh} · {boss.bossType}
+      </span>
     </Link>
   )
 }
@@ -689,6 +1083,11 @@ function Header({
         <span>攻略库</span>
         <strong>Guide Forge</strong>
       </Link>
+      <nav className="topnav" aria-label="图鉴导航">
+        <Link to={`/games/${gameId}/weapons`}>武器</Link>
+        <Link to={`/games/${gameId}/bosses`}>Boss</Link>
+        <Link to={`/games/${gameId}/runes`}>符文</Link>
+      </nav>
       <label className="game-switcher">
         <span>游戏</span>
         <select
