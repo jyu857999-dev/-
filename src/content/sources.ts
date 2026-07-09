@@ -109,6 +109,54 @@ export const sourceRegistry: GuideSource[] = [
     type: 'wiki',
     language: 'en',
   },
+  {
+    title: 'Fextralife New Player Help',
+    url: 'https://norestforthewicked.wiki.fextralife.com/New+Player+Help',
+    type: 'guide',
+    language: 'en',
+  },
+  {
+    title: 'Fextralife Walkthrough',
+    url: 'https://norestforthewicked.wiki.fextralife.com/Walkthrough',
+    type: 'guide',
+    language: 'en',
+  },
+  {
+    title: 'Fextralife Side Quests',
+    url: 'https://norestforthewicked.wiki.fextralife.com/Side+Quests',
+    type: 'guide',
+    language: 'en',
+  },
+  {
+    title: 'Fextralife Endings',
+    url: 'https://norestforthewicked.wiki.fextralife.com/Endings',
+    type: 'guide',
+    language: 'en',
+  },
+  {
+    title: 'Fextralife Crafting',
+    url: 'https://norestforthewicked.wiki.fextralife.com/Crafting',
+    type: 'guide',
+    language: 'en',
+  },
+  {
+    title: 'Fextralife New Game Plus',
+    url: 'https://norestforthewicked.wiki.fextralife.com/New+Game+%2B',
+    type: 'guide',
+    language: 'en',
+  },
+  {
+    title: 'Fextralife Trophy & Achievement Guide',
+    url: 'https://norestforthewicked.wiki.fextralife.com/Trophy+%26+Achievement+Guide',
+    type: 'guide',
+    language: 'en',
+  },
+  {
+    title: 'Fextralife Housing',
+    url: 'https://norestforthewicked.wiki.fextralife.com/Housing',
+    type: 'guide',
+    language: 'en',
+  },
 ]
 
 export const sourceShortcuts: Record<string, GuideSource> = {
@@ -130,6 +178,14 @@ export const sourceShortcuts: Record<string, GuideSource> = {
   'boss-caretaker-tusk': sourceRegistry[15],
   'boss-winged-brood': sourceRegistry[16],
   'boss-unbreakable-egg': sourceRegistry[17],
+  'guide-new-player-help': sourceRegistry[18],
+  'guide-walkthrough': sourceRegistry[19],
+  'guide-side-quests': sourceRegistry[20],
+  'guide-endings': sourceRegistry[21],
+  'guide-crafting': sourceRegistry[22],
+  'guide-new-game-plus': sourceRegistry[23],
+  'guide-achievements': sourceRegistry[24],
+  'guide-housing': sourceRegistry[25],
 }
 
 export const officialImages: GuideImage[] = [
@@ -223,6 +279,27 @@ export const imageShortcuts: Record<string, GuideImage> = {
     alt: 'The Winged Brood boss image',
     caption: 'The Winged Brood Boss 图鉴',
     sourceUrl: 'https://norestforthewicked.wiki.fextralife.com/The+Winged+Brood',
+    licenseNote: 'Fextralife Wiki 图片，保留原图与来源链接，不移除水印或标识。',
+  },
+  'wiki-crafting-materials': {
+    url: 'https://norestforthewicked.wiki.fextralife.com/file/No-Rest-For-The-Wicked/materials-crafting-norestforthewicked-wiki-guide-400px.jpg',
+    alt: 'No Rest for the Wicked crafting materials',
+    caption: 'Crafting 页面材料图',
+    sourceUrl: 'https://norestforthewicked.wiki.fextralife.com/Crafting',
+    licenseNote: 'Fextralife Wiki 图片，保留原图与来源链接，不移除水印或标识。',
+  },
+  'wiki-housing': {
+    url: 'https://norestforthewicked.wiki.fextralife.com/file/No-Rest-For-The-Wicked/buy-housing-no-rest-for-the-wicked-wiki-guide.jpg',
+    alt: 'No Rest for the Wicked housing guide image',
+    caption: 'Housing 页面房屋图',
+    sourceUrl: 'https://norestforthewicked.wiki.fextralife.com/Housing',
+    licenseNote: 'Fextralife Wiki 图片，保留原图与来源链接，不移除水印或标识。',
+  },
+  'wiki-side-quest-armor': {
+    url: 'https://norestforthewicked.wiki.fextralife.com/file/No-Rest-For-The-Wicked/the-innkeepers-husband-side-quest-no-rest-for-the-wicked-wiki-guide.jpg',
+    alt: 'No Rest for the Wicked side quest image',
+    caption: 'Fextralife 支线/装备相关页面图片',
+    sourceUrl: 'https://norestforthewicked.wiki.fextralife.com/Armor',
     licenseNote: 'Fextralife Wiki 图片，保留原图与来源链接，不移除水印或标识。',
   },
 }

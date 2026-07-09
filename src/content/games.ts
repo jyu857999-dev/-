@@ -14,6 +14,7 @@ export const games: GameConfig[] = [
       'build',
       'resource_map',
       'boss',
+      'collection',
     ],
   },
 ]
