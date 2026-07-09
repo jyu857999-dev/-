@@ -22,6 +22,8 @@ describe('boss and rune catalog', () => {
 
     expect(echo.some((boss) => boss.name === 'Echo Knight')).toBe(true)
     expect(warrick?.attacks.some((attack) => attack.name === '跳砸')).toBe(true)
+    expect(warrick?.phases?.length).toBeGreaterThanOrEqual(2)
+    expect(warrick?.beginnerMistakes?.length).toBeGreaterThanOrEqual(3)
   })
 
   it('filters runes from the full table', () => {

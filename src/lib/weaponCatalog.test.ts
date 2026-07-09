@@ -18,8 +18,10 @@ describe('weapon catalog', () => {
 
     expect(breakingWave?.category).toBe('axes')
     expect(breakingWave?.iconUrl).toContain('breaking-wave')
+    expect(breakingWave?.recommendedRunes?.join(' ')).toContain('Dropkick')
     expect(hanzo?.category).toBe('katanas')
     expect(hanzo?.iconUrl).toContain('hanzo-blade')
+    expect(hanzo?.buildTips?.length).toBeGreaterThanOrEqual(2)
   })
 
   it('filters by Chinese category labels and weapon names', () => {

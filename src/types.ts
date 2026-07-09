@@ -110,6 +110,13 @@ export type WeaponEntry = {
   acquisition: string[]
   merchants: string[]
   notes: string[]
+  role?: string
+  bestFor?: string[]
+  strengths?: string[]
+  weaknesses?: string[]
+  recommendedRunes?: string[]
+  buildTips?: string[]
+  alternatives?: string[]
   lastVerifiedAt: string
   searchText: string
 }
@@ -135,8 +142,11 @@ export type BossEntry = {
   sourceUrl: string
   summary: string
   preparation: string[]
+  recommendedTools?: string[]
+  phases?: { title: string; steps: string[] }[]
   strategy: string[]
   attacks: { name: string; counter: string }[]
+  beginnerMistakes?: string[]
   notes: string[]
   lastVerifiedAt: string
   searchText: string

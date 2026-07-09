@@ -585,14 +585,17 @@ function WeaponDetail() {
         <section className="weapon-detail-main">
           <p className="eyebrow">{weapon.categoryLabelZh}</p>
           <h1>{weapon.name}</h1>
-          <p>
-            {weapon.name} 属于 {weapon.categoryLabelZh}，当前资料综合自 Fextralife Weapons
-            页面和该武器来源页；随机词条、稀有度和要求以游戏内实物为准。
-          </p>
+          <p>{weapon.role ?? `${weapon.name} 属于 ${weapon.categoryLabelZh}。`}</p>
 
+          <InfoSection title="适合人群" values={weapon.bestFor ?? []} />
+          <InfoSection title="优点" values={weapon.strengths ?? []} />
+          <InfoSection title="短板" values={weapon.weaknesses ?? []} />
+          <InfoSection title="推荐符文" values={weapon.recommendedRunes ?? []} />
+          <InfoSection title="Build 与使用建议" values={weapon.buildTips ?? []} />
           <InfoSection title="获取方式" values={weapon.acquisition} />
           <InfoSection title="商人 / 掉落备注" values={weapon.merchants} />
           <InfoSection title="使用注意" values={weapon.notes} />
+          <InfoSection title="同类替代" values={weapon.alternatives ?? []} />
 
           {related.length > 0 && (
             <section className="related-weapon-strip">
@@ -720,6 +723,24 @@ function BossDetail() {
           <h1>{boss.name}</h1>
           <p>{boss.summary}</p>
           <InfoSection title="战前准备" values={boss.preparation} />
+          <InfoSection title="推荐工具" values={boss.recommendedTools ?? []} />
+          {boss.phases && boss.phases.length > 0 && (
+            <section className="info-section">
+              <h2>阶段打法</h2>
+              <div className="phase-stack">
+                {boss.phases.map((phase) => (
+                  <section key={phase.title} className="phase-card">
+                    <h3>{phase.title}</h3>
+                    <ul>
+                      {phase.steps.map((step) => (
+                        <li key={step}>{step}</li>
+                      ))}
+                    </ul>
+                  </section>
+                ))}
+              </div>
+            </section>
+          )}
           <InfoSection title="打法流程" values={boss.strategy} />
           <section className="info-section">
             <h2>招式与应对</h2>
@@ -742,6 +763,7 @@ function BossDetail() {
               </table>
             </div>
           </section>
+          <InfoSection title="新手常见死法" values={boss.beginnerMistakes ?? []} />
           {boss.notes.length > 0 && <InfoSection title="备注" values={boss.notes} />}
         </section>
         <aside className="weapon-infobox" aria-label="Boss 资料卡">
@@ -1014,6 +1036,7 @@ function BossCard({ boss }: { boss: BossEntry }) {
 }
 
 function InfoSection({ title, values }: { title: string; values: string[] }) {
+  if (values.length === 0) return null
   return (
     <section className="info-section">
       <h2>{title}</h2>
